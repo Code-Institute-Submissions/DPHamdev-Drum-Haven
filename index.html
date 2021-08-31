@@ -8,18 +8,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" >
     <script rel="javascript" src="assets/js/myScript.js" type="javascript"></script>
-    <title>Sound Haven Studios</title>
+    <title>Drum Haven</title>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-dark bg-dark">
             <div>
                 <a href="index.html">Home</a> 
-                <a href="#recording">Recording</a>
-                <a href="#rental">Rental</a>
-                <a href="#storage">Storage</a>
-                <a href="#rehearsal">Rehearsal</a>
-                <a href="#contact">Contact</a>
+                <a href="tuning.html">Tuning</a>
+                <a href="servicing.html">Servicing</a>
+                <a href="repair.html">Repair</a>
+                <a href="rental.html">Rental</a>
             </div>  
         </nav>
     </header>
@@ -28,9 +27,58 @@
 
     </div>
 
+    <div>
+        <h2>Welcome to Drum Haven</h2>
+        <p>Your one stop shop to all things drums, Drum Haven will be able to accomodate all your drumming needs.
+            The services we can accomodate are: 
+            <ul>
+                <li><a href="tuning.html">Tuning</a></li>
+                <li><a href="servicing.html">Servicing</a></li>
+                <li><a href="repair.html">Repair</a></li>
+                <li><a href="rental.html">Rental</a></li>
+            </ul>
+        </p>
+    </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <h2>Contact us</h2>
+            <form action="GET">
+                <label for="name">NAME</label>
+                <input id="name" type="text">
+                <br>
+                <label for="comments">COMMENTS</label>
+                <input id="comments" type="text">
+                <br>
+                <input type="submit" id="submit">
+            </form>
+        </div>
+
+        <div class="col-6">
+            <h2>Location</h2>
+            <div id="map">
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgrC4qtgVemh8PAsIKY-lJFxSokgrGrbk&callback=initMap&libraries=&v=weekly"async></script>
+            </div>
+        </div>
+    </div>
+</div>
+
     <footer>
 
     </footer>
+
+    <script>
+        function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: 51.620935810213886, lng: -3.904999272854836 
+            
+                , },
+            zoom: 15,
+            });
+      }</script>
+
+      
     
 </body>
 </html>
