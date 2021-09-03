@@ -33,25 +33,27 @@ let snare = [10, 12, 13, 14, 15];
 let tuneForm = document.createElement("form");
 tuneForm.innerHTML = `
         <label for="fuName">Full Name</label>
+        <br>
         <input type="text" name="fuName">
         <br>
         <label for="brand">Brand</label>
+        <br>
         <input type="text" name="brand">
         <br>
             <label for="bDrum">Bass Drum</label>
             <br>
-            <label for="bDrum16">16"</label>
-            <input type="checkbox" name="bDrum16" value="16">
-            <label for="bDrum18">18"</label>
-            <input type="checkbox" name="bDrum18" value="18">
-            <label for="bDrum20">20"</label>
-            <input type="checkbox" name="bDrum20" value="20">
-            <label for="bDrum22">22"</label>
-            <input type="checkbox" name="bDrum22" value="22">
-            <label for="bDrum24">24"</label>
-            <input type="checkbox" name="bDrum24" value="24">
-            <label for="bDrum26">26"</label>
-            <input type="checkbox" name="bDrum26" value="26">
+            <label for="bDrum">16"</label>
+            <input type="checkbox" name="bDrum" id="bDrum" value="16">
+            <label for="bDrum">18"</label>
+            <input type="checkbox" name="bDrum" id="bDrum" value="18">
+            <label for="bDrum">20"</label>
+            <input type="checkbox" name="bDrum" id="bDrum" value="20">
+            <label for="bDrum">22"</label>
+            <input type="checkbox" name="bDrum" id="bDrum" value="22">
+            <label for="bDrum">24"</label>
+            <input type="checkbox" name="bDrum" id="bDrum" value="24">
+            <label for="bDrum">26"</label>
+            <input type="checkbox" name="bDrum" id="bDrum" value="26">
             <br>
                 <label for="bDrum">Tom Drum</label>
                 <br>
@@ -88,12 +90,34 @@ tuneForm.innerHTML = `
                     <input type="checkbox" name="sDrum15" value="15">
                     <br>
                         <label for="notes">Notes</label>
+                        <br>
                         <input type="text" name="notes">
-                        
-
+                            <br>
+                            <br>
+                            <input type="submit" onclick="add_element_to_array();" value="Tune my drums!">
 `
-
 document.getElementById("drum-tuning").appendChild(tuneForm);
 
+$("#tuneSubmit").click(function tuneSubmit() {
+    $("input:checkbox[name=bDrum]:checked").each(function(){
+        bassDrum.push($(this).val());
+    }); return bassDrum
+})
 
-console.log(kitSize)
+
+var x = 0;
+var array = Array();
+
+function add_element_to_array()
+{
+ array[x] = document.getElementById("bDrum").value;
+ $("input:checkbox[name=bDrum]:checked").each(function(){
+    bassDrum.push($(this).val());
+});
+ alert("Element: " + array[x] + " Added at index " + x);
+ x++;
+ document.getElementById("bDrum").value = "";
+ return bassDrum
+}
+
+console.log(bassDrum)

@@ -3,11 +3,6 @@
 body {
   background-color: #594F4F;
 }
-
-.focal-image {
-
-}
-
 /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
        #map {
@@ -47,7 +42,6 @@ h2 {
     font-size: 80px;
     text-align: center;
     color: white;
-    text-decoration: underline;
     text-decoration-color: white;
     letter-spacing: 2px;
 }
@@ -60,7 +54,6 @@ h3 {
   font-size: 50px;
   text-align: center;
   color: white;
-  text-decoration: underline;
   text-decoration-color: white;
   letter-spacing: 2px;
 
@@ -96,6 +89,40 @@ li a {
   font-size: 1.2em;
 }
 
+/* Pictures on home page styling */
+.indexPic {
+  height: 100px;
+  width: 33%;
+  padding: 5px;
+  margin: 2px;
+}
+
+.indexPic p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: antiquewhite;
+}
+
+
+
+.indexPic img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: inherit;
+  border: 2px solid black;
+}
+
+.index-box {
+  background-color: #a5886c;
+  border: solid 2px #ffffff;
+  text-align: center;
+  margin-top: 10px;
+}
+
 .text-boxes {
   width: 50%;
   background-color: #a5886c;
@@ -125,6 +152,11 @@ li a {
   border: 2px solid white;
 }
 
+.pbox:hover {
+  background-color: #a50909;
+  transition: background-color 0.5s ease-in 0.1s; 
+}
+
 .button-align {
   text-align: center;
 }
@@ -135,6 +167,15 @@ li a {
 
 .test-text i {
   color: #fffb1f;
+}
+
+/* Tuning Form Styling */
+
+#drum-tuning {
+  font-size: larger;
+  font-family: 'Advent Pro','Times New Roman', Times, serif;
+  font-weight: 800;
+  margin: 10px;
 }
 
 /* Max Widths */

@@ -27,9 +27,10 @@
             <div>
                 <h2>Welcome to Drum Haven</h2>
             </div>
+        </div>
             
-            <div class="row">
-                <div class="text-boxes col-12">
+        <div class="row">
+            <div class="index-box col">
                     <p>Your one stop shop to all things drums, Drum Haven will be able to accomodate all your drumming needs.
                         The services we can accomodate are:                     
                     </p>
@@ -38,7 +39,23 @@
                         <li><a href="servicing.html">Servicing</a></li>
                         <li><a href="testimonials.html">Rental</a></li>
                     </ul>
-                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col indexPic">
+                <div><p>Drum Tuning</p></div>
+                <img  src="/assets/images/drumtuning.jpg" alt="Drum Tuning">
+            </div>
+       
+            <div class="col indexPic">
+                <div><p>Drum Servicing</p></div>
+                <img  src="/assets/images/drumservice.jpg" alt="Drum Servicing">
+            </div>
+                    
+            <div class="col indexPic">
+                <div><p>Cymbal Repair</p></div>
+                <img  src="/assets/images/cymbalrepair.jpg" alt="Cymbal Repair">
             </div>
         </div>
     </div>
@@ -47,14 +64,20 @@
     <div class="row">
         <div class="col-6">
             <h2>Contact us</h2>
-            <form action="GET">
+            <form class="index-box" action="GET">
                 <label for="name">NAME</label>
-                <input id="name" type="text">
+                <br>
+                <input id="name" type="text" required>
+                <br>
+                <label for="email">EMAIL</label>
+                <br>
+                <input type="email" name="email" id="email" required>
                 <br>
                 <label for="comments">COMMENTS</label>
-                <input id="comments" type="text">
                 <br>
-                <input type="submit" id="submit">
+                <input id="comments" type="text" required>
+                <br>
+                <input type="submit" id="submit" value="Ask us a question!">
             </form>
         </div>
 
