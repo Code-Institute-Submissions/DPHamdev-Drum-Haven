@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&family=Staatliches&display=swap');
+
+body {
+  background-color: #594F4F;
+}
+
+.focal-image {
+
+}
+
 /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
        #map {
@@ -16,8 +26,131 @@ div #map {
     min-height: 360px;
 }
 
-/* h2 styling*/
+/* a styling */
+
+nav a {
+  font-family: 'staatliches', 'Times New Roman', Times, serif;
+  color: white;
+  font-size: 2em;
+  list-style-type: none;
+}
+
+a:hover {
+  color: red;
+}
+
+/* h2 styling */
 
 h2 {
     text-transform: uppercase;
+    font-family: 'staatliches', 'Times New Roman', Times, serif;
+    font-size: 80px;
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: white;
+    letter-spacing: 2px;
 }
+
+/* h3 styling */
+
+h3 {
+  text-transform: uppercase;
+  font-family: 'staatliches', 'Times New Roman', Times, serif;
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: white;
+  letter-spacing: 2px;
+
+}
+
+/* p styling */
+
+p {
+  font-family: 'Advent Pro', 'Times New Roman', Times, serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: black;
+  letter-spacing: 1.5px;
+  padding: 7.5px;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 7.5px;
+}
+
+ul a {
+  font-family: 'Advent Pro', 'Times New Roman', Times, serif;
+  color: #fffb1f;
+  letter-spacing: 1.5px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+li a {
+  font-size: 1.2em;
+}
+
+.text-boxes {
+  width: 50%;
+  background-color: #a5886c;
+  border: solid 2px #ffffff;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.drop-down {
+  background-color: #a5886c;
+  border: solid 2px #ffffff;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.servbox p {
+  display: none;
+  overflow: hidden;
+}
+
+/* Styling for button */
+
+.pbox {
+  background: #a5886c;
+  font-family: 'Staatliches', 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  border: 2px solid white;
+}
+
+.button-align {
+  text-align: center;
+}
+
+.test-text {
+  font-size: 1em;
+}
+
+.test-text i {
+  color: #fffb1f;
+}
+
+/* Max Widths */
+
+@media screen and (max-width: 550px) {
+  .serv-sm {
+      flex: 0 0 auto;
+      width: 100%;
+      padding: 25px;
+  }
+}
+
+
+
+$container-max-widths: (
+  sm: 420px,
+  md: 720px,
+  lg: 960px
+);
