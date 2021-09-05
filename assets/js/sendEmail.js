@@ -29,12 +29,13 @@ function sendTuneForm(contactForm) {
     .then(
         function(response) {
             console.log("SUCCESS", response);
-            document.getElementById("tuning-form").reset();
+            
         },
         function(error) {
             console.log("FAILED", error);
         }
     );
+    document.getElementById("tuning-form").reset();
     return false;  // To block from loading a new page
 }
 
@@ -52,12 +53,13 @@ function sendServForm(contactForm) {
     .then(
         function(response) {
             console.log("SUCCESS", response);
-            document.getElementById("serviceform").reset();
+            
         },
         function(error) {
             console.log("FAILED", error);
         }
     );
+    document.getElementById("serviceform").reset();
     return false;  // To block from loading a new page
 }
 
