@@ -148,43 +148,11 @@ p {
   margin-top: 10px;
 }
 
-.drop-down {
-  background-color: #a5886c;
-  border: solid 2px #ffffff;
-  text-align: center;
-  margin-top: 10px;
+.cym-box img {
+  width: 100%;
 }
 
-.servbox p {
-  display: none;
-  overflow: hidden;
-}
 
-/**************************************** Styling for button */
-
-.pbox {
-  background: #a5886c;
-  font-family: 'Staatliches', 'Times New Roman', Times, serif;
-  font-size: 2rem;
-  border: 2px solid white;
-}
-
-.pbox:hover {
-  background-color: #a50909;
-  transition: background-color 0.5s ease-in 0.1s; 
-}
-
-.button-align {
-  text-align: center;
-}
-
-.test-text {
-  font-size: 1em;
-}
-
-.test-text i {
-  color: #fffb1f;
-}
 
 /**************************************** Form Styling */
 
@@ -210,6 +178,12 @@ p {
       padding: 15px;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .col-sm-12 p {
+      font-size: small;
+    }
+  }
 
 /**************************************** Nav Bar Mobile friendly */
 

@@ -8,7 +8,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" >
     <script src="https://code.jquery.com/jquery-3.6.0.js"integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
-    <title>Drum Haven - Rental</title>
+    <title>Drum Haven - Cymbal Repair</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_QJuX1a1bCxsE7peYvZrP3");
+})();
+</script>
 </head>
 <body>
 <header>
@@ -29,71 +35,69 @@
         </div>
     </div>
         <div class="row">
-                <div class="col-3 serv-sm button-align">
-                    <button type="button" class="pbox" id="christian">Christian</button>
-                        <p class="drop-down test-text" id="christian-text">
-                            <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
-                            <br>
-                            <br>
-                            This service did exactly as was advertised. My drums had suffered a lot of rust due to previous living conditions. 
-                            <br>
-                            <br>
-                            The hardware was coated black and this meant to remove the rust we lost a bunch of the coating. 
-                            Although I was warned this would happen before drum haven continued with the work.
-                            <br>
-                            <br>
-                            My drums came  back with a kind of "antiqued" look which I think Actually looks good. 
-                            Apart from damage I had caused to the paint work myself my kit came back looking brand new.
-                            <br>
-                            <br>
-                            Very happy
-                        </p>
-                </div>
-                <div  class="col-3 serv-sm button-align">
-                    <button type="button" class="pbox" id="jack">Jack</button>
-                        <p class="drop-down test-text" id="jack-text">
-                            <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
-                            <br>
-                            <br>
-                            Took my snare drum to Ken for a tune up after buying one second hand which he made studio ready. 
-                            <br>
-                            <br>
-                            Knows what he's doing and clearly spends a lot of time with each drum!
-                            Would recommend to anyone wanted to get the most out of their kit
-                        </p>
+            <div class="col-6 col-sm-12 text-boxes cym-box">
+                <p>
+                Using specialist techniques along with skills accquired over years of working with metals,
+                the team at Drum Haven are able to adapt their understanding and manipulate cymbals into new forms to allow 
+                for clients to extend the longevity of their much beloved cymbals. 
 
-                </div>
-                <div  class="col-3 serv-sm button-align">
-                    <button type="button" class="pbox" id="adrian">Adrian</button>
-                        <p class="drop-down test-text" id="adrian-text">
-                            <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
-                            <br>
-                            <br>
-                            This guy really knows his stuff! Fast and efficient when it comes to cymbal repairs and mine sounded as good as new once the main man Ken had a look. 
-                            He also tuned my drum kit and i couldn't be happier! Anything drum related this is defo the place to go! 
-                            <br>
-                            <br>
-                            Whether your experienced or not they can help with the most technical of things and most basic and are always happy to explain anything and help with whatever you need! 
-                            Can't stress how good this place is! 
-                            <br>
-                            <br>
-                            Check it out people! One happy customer right here and I'll 100% be going back in future with my drum needs. Thanks drum haven! You rock!
-                        </p>
+                Prices range from £25 to £80 depending on the size cymbal and damage needing repair. 
 
-                </div>
-                <div  class="col-3 serv-sm button-align">
-                    <button type="button" class="pbox" id="tony">Tony</button>
-                        <p class="drop-down test-text" id="tony-text">
-                            <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
-                            <br>
-                            <br>
-                            My kit has never sounded better! Was finished within a few days at a very fair price. Definitely the place to go to give your kit some TLC.
-                        </p>
-
-                </div>
+                Fill out our form with details of the cymbals you'd like to have repaired, and we'll promptly get back to you.
+                </p>
+                <img src="/assets/images/cymbalrepair.jpg" alt="Cymbal repair">
             </div>
+            <div class="col-6 text-boxes">
+                    <form id="cym-form" onsubmit="return sendCymForm(this);">
+
+                        <label for="cymfuName">Full Name</label>
+                        <br>
+                        <input type="text" name="cymFuName" id="cymFuName" required>
+                        <br>
+                        <label for="cymEmail">Email</label>
+                        <br>
+                        <input type="email" name="cymEmail" id="cymEmail" required>
+                        <br>
+                        <label for="cymBrand">Brand</label>
+                        <br>
+                        <input type="text" name="cymBrand" id="cymBrand" required>
+                        <br>
+
+                        <label for="cymSize">Cymbal Size</label>
+                        <br>
+                        <select name="cymSize" id="cymSize" required>
+
+                            <option value="10">10"</option>
+                            <option value="12">12"</option>
+                            <option value="14">14"</option>
+                            <option value="16">16"</option>
+                            <option value="18">18"</option>
+                            <option value="20">20"</option>
+                            <option value="22">22"</option>
+                            <option value="24">24"</option>
+
+                        </select>
+                        <br>
+                        <label for="cymDam">Type of damage</label>
+                        <br>
+                            <select name="cymDam" id="cymDam" required>
+                                <option value="bell">Bell</option>
+                                <option value="bow">Bow</option>
+                                <option value="edge">Edge</option>
+                            </select>
+                        <br>
+
+                        <label for="cymNotes">Any Additional Notes</label>
+                        <br>
+                        <input type="text" name="cymNotes" id="cymNotes" required>
+                        <br>
+
+                        <br>
+                        <input type="submit" value="Fix my Cymbal!">
+            
+            </form>
+
         </div>
-    </div>
     <footer>
         <div class="footer">
             <a href="http://www.instagram.com/DrumHavenUK" target="blank"><i class="fab fa-instagram-square"></i></a>
@@ -104,4 +108,5 @@
 </body>    
 
 <script src="assets/js/myScript.js"></script>
+<script src="assets/js/sendEmail.js"></script>
 </html>
