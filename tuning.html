@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" >
     <script src="https://code.jquery.com/jquery-3.6.0.js"integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
     <title>Drum Haven - Tuning</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_QJuX1a1bCxsE7peYvZrP3");
+    })();
+    </script>
 </head>
 
 <body>
@@ -18,7 +24,7 @@
             <a href="index.html">Home</a> 
             <a href="tuning.html">Tuning</a>
             <a href="servicing.html">Servicing</a>
-            <a href="testimonials.html">Testimonials</a>
+            <a href="cymbalrepair.html">Testimonials</a>
         </div>  
     </nav>
 </header>
@@ -44,28 +50,33 @@
 
             <div class="text-boxes col-6">
                <div id="drum-tuning">
-                   <form id="tuning-form">
+                   <form id="tuning-form" onsubmit="return sendTuneForm(this);">
+
                         <label for="tunefuName">Full Name</label>
                         <br>
-                        <input type="text" name="tuneFuName" id="tuneFuName">
+                        <input type="text" name="tuneFuName" id="tuneFuName" required>
+                        <br>
+                        <label for="tuneEmail">Email</label>
+                        <br>
+                        <input type="email" name="tuneEmail" id="tuneEmail" required>
                         <br>
                         <label for="tuneBrand">Brand</label>
                         <br>
-                        <input type="text" name="tuneBrand" id="tuneBrand">
+                        <input type="text" name="tuneBrand" id="tuneBrand" required>
                         <br>
 
                         <label for="kitSize">Kit Size</label>
                         <br>
-                        <select name="kitSize" id="kitSize">
+                        <select name="kitSize" id="kitSize" required>
 
-                            <option value="4 Piece">4 Piece</option>
-                            <option value="5 Piece">5 Piece</option>
+                            <option value="4-Piece">4 Piece</option>
+                            <option value="5-Piece">5 Piece</option>
 
                         </select>
                         <br>
                         <label for="bDrum">Bass Drum</label>
                         <br>
-                            <select name="bassDrum" id="bDrum">
+                            <select name="bassDrum" id="bDrum" required>
                                 <option value="16">16"</option>
                                 <option value="18">18"</option>
                                 <option value="20">20"</option>
@@ -74,24 +85,12 @@
                                 <option value="26">26"</option>
                             </select>
                         <br>
-
-                        <label for="tDrum">Tom Drums</label>
-                        <br>
-                            <select name="tomDrum" id="tDrum">
-                                <option value="10 12 14">10" 12" 14"</option>
-                                <option value="12 13 16">12" 13" 16"</option>
-                                <option value="10 12 16">10" 12" 16"</option>
-                                <option value="10 14">10" 14"</option>
-                                <option value="12 16">12" 16"</option>
-                                <option value="13 16">13" 16"</option>
-                            </select> 
-                        <br>
                             
                         <label for="sDrum">Snare Drum</label>
                             
                         <br>
                             
-                            <select name="snareDrum" id="sDrum">
+                            <select name="snareDrum" id="sDrum" required>
                                 <option value="10">10"</option>
                                 <option value="12">12"</option>
                                 <option value="13">13"</option>
@@ -100,15 +99,20 @@
                         
                         <br>
 
-                                <label for="tuneNotes">Notes</label>
+                                <label for="tomNotes">Tom Drum Sizes</label>
                                 <br>
-                                <input type="text" name="tuneNotes" id="tuneNotes">
+                                <input type="text" name="tomNotes" id="tomNotes" required>
                                     <br>
 
                                     <br>
                                     <input type="submit" value="Tune my drums!">
                
             </form>
+
+            <div>
+                <h3>Price</h3>
+                <p id="tunePrice">£40</p>
+            </div>
 
             </div>
         </div>
@@ -129,4 +133,5 @@
   
     
 <script src="assets/js/myScript.js"></script>
+<script src="assets/js/sendEmail.js"></script>
 </html>
