@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Staatliches&display=swap');
 
 .row {
   height: 25%;
@@ -6,7 +6,7 @@
 
 body {
   
-  background-color: #594F4F;
+  background-color: #6b6e70;
 }
 /**************************************** Always set the map height explicitly to define 
 the size of the div 
@@ -60,8 +60,8 @@ h2 {
 h3 {
   text-transform: uppercase;
   font-family: 'staatliches', 'Times New Roman', Times, serif;
-  font-size: 50px;
   text-align: center;
+  font-size: 50px;
   color: white;
   letter-spacing: 2px;
 }
@@ -69,10 +69,10 @@ h3 {
 /**************************************** p styling */
 
 p {
-  font-family: 'Advent Pro', 'Times New Roman', Times, serif;
-  font-size: 1.5em;
+  font-family: 'Acme', 'Times New Roman', Times, serif;
+  font-size: 1.1em;
   font-weight: 700;
-  color: black;
+  color: rgb(255, 255, 255);
   letter-spacing: 1.5px;
   padding: 7.5px;
   margin: 0;
@@ -134,25 +134,39 @@ p {
 }
 
 .index-box {
-  background-color: #a5886c;
-  border: solid 2px #ffffff;
+  background-color: #222629;
+  border: solid 1px #ffffff;
   text-align: center;
   margin-top: 10px;
+
 }
 
 .text-boxes {
   width: 50%;
-  background-color: #a5886c;
-  border: solid 2px #ffffff;
+  background-color: #222629;
+  border: solid 1px #61892f;
   text-align: center;
   margin-top: 10px;
 }
 
-.cym-box img {
-  width: 100%;
+.text-boxes a {
+  color: white;
+  font-size: 40px;
 }
 
+.cym-box img {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid white;
+}
 
+/************** Drum Service Img Box*/
+
+.drum-serv img {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid white;
+}
 
 /**************************************** Form Styling */
 
@@ -160,13 +174,30 @@ p {
   height: 100px;
 }
 
+form {
+  color: white;
+  top: 50%;
+  left: 50%;
+  text-shadow: 1px 1px #86c232;
+  font-size: x-large;
+  font-family: 'Acme', 'Times New Roman', Times, serif;
+  padding: 2px;
+  margin: 2px;
+}
+
+#submit {
+  background-color: #474b4f;
+  color: white;
+  margin: 5px;
+}
+
 /**************************************** Tuning Form Styling */
 
-#drum-tuning {
-  font-size: larger;
-  font-family: 'Advent Pro','Times New Roman', Times, serif;
-  font-weight: 800;
-  margin: 10px;
+
+.drum-tuning img {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid white;
 }
 
 /**************************************** Max Widths */
@@ -206,10 +237,3 @@ nav {
     width: fit-content;
         }
       }
-
-
-$container-max-widths: (
-  sm: 420px,
-  md: 720px,
-  lg: 960px
-);

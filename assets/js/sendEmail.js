@@ -19,7 +19,7 @@ function sendForm(contactForm) {
 
 function sendTuneForm(contactForm) {
     emailjs.send('Gmail', 'Tuning', {
-        "from_name": contactForm.tuneFuName.value,
+        "from_name": contactForm.tunefuName.value,
         "from_email": contactForm.tuneEmail.value,
         "kitsize": contactForm.kitSize.value,
         "bassdrum": contactForm.bDrum.value,
@@ -41,7 +41,7 @@ function sendTuneForm(contactForm) {
 
 function sendServForm(contactForm) {
     emailjs.send('Gmail', 'drumserv', {
-        "from_name": contactForm.servFuName.value,
+        "from_name": contactForm.servfuName.value,
         "from_email": contactForm.servEmail.value,
         "brand": contactForm.servBrand.value,
         "style": contactForm.servStyle.value,
@@ -63,7 +63,7 @@ function sendServForm(contactForm) {
 
 function sendCymForm(contactForm) {
     emailjs.send('Gmail', 'cymrep', {
-        "from_name": contactForm.cymFuName.value,
+        "from_name": contactForm.cymfuName.value,
         "from_email": contactForm.cymEmail.value,
         "brand": contactForm.cymBrand.value,
         "size": contactForm.cymSize.value,

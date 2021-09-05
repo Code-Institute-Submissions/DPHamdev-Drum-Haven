@@ -38,23 +38,27 @@
                 </div>
             </div>
 
-            <div class="text-boxes col-6">
-
+            <div class="text-boxes col-6 drum-tuning">
+                    <h3>tuning</h3>
                     <p>At Drum Haven, we're able to bring your drum kit to life and make it sound like it's supposed to, factoring in drum head pairings between resonant and batter heads. 
                         <br>
                         Optimising the true resonance of the drum and fundamental note of the shell material in order to make your drums sound the best they possibly can. 
                         <br>
                         Don't get left behind with a sorry sounding drum kit, bring it to us so that you sound like John Bonham at your next gig or on your next music release!
+
+                        Prices start from £20 for one drum, or whole kit for £80!
                     </p>
+                    <img src="/assets/images/DrumTune.jpeg" alt="Drum Tuning">
             </div>
 
             <div class="text-boxes col-6">
-               <div id="drum-tuning">
+               <div class="drum-tuning">
+                   <h3>Book in now!</h3>
                    <form id="tuning-form" onsubmit="return sendTuneForm(this);">
 
                         <label for="tunefuName">Full Name</label>
                         <br>
-                        <input type="text" name="tuneFuName" id="tuneFuName" required>
+                        <input type="text" name="tunefuName" id="tunefuName" required>
                         <br>
                         <label for="tuneEmail">Email</label>
                         <br>
@@ -68,8 +72,8 @@
                         <label for="kitSize">Kit Size</label>
                         <br>
                         <select name="kitSize" id="kitSize" required>
-
-                            <option value="4-Piece">4 Piece</option>
+                            <option value="">--</option>
+                            <option value="4-piece">4 Piece</option>
                             <option value="5-Piece">5 Piece</option>
 
                         </select>
@@ -77,6 +81,7 @@
                         <label for="bDrum">Bass Drum</label>
                         <br>
                             <select name="bassDrum" id="bDrum" required>
+                                <option value="">--</option>
                                 <option value="16">16"</option>
                                 <option value="18">18"</option>
                                 <option value="20">20"</option>
@@ -91,6 +96,7 @@
                         <br>
                             
                             <select name="snareDrum" id="sDrum" required>
+                                <option value="">--</option>
                                 <option value="10">10"</option>
                                 <option value="12">12"</option>
                                 <option value="13">13"</option>
@@ -105,14 +111,11 @@
                                     <br>
 
                                     <br>
-                                    <input type="submit" value="Tune my drums!">
+                                    <input type="submit" id="submit" value="Tune my drums!">
                
             </form>
 
-            <div>
-                <h3>Price</h3>
-                <p id="tunePrice">£40</p>
-            </div>
+
 
             </div>
         </div>
@@ -130,8 +133,6 @@
 
 
 
-  
-    
-<script src="assets/js/myScript.js"></script>
+
 <script src="assets/js/sendEmail.js"></script>
 </html>

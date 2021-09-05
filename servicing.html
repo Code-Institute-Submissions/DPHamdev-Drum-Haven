@@ -15,6 +15,7 @@ emailjs.init("user_QJuX1a1bCxsE7peYvZrP3");
 })();
 </script>
 </head>
+<body>
 <header>
     <nav class="navbar navbar-dark bg-dark">
         <div>
@@ -25,7 +26,7 @@ emailjs.init("user_QJuX1a1bCxsE7peYvZrP3");
         </div>  
     </nav>
 </header>
-<body>
+
     <div class="container servbox">
         <div class="row">
             <div class="logoImg col-sm-12 col">
@@ -33,13 +34,36 @@ emailjs.init("user_QJuX1a1bCxsE7peYvZrP3");
             </div>
         </div>
         <div class="row">
-            <div class="col-6 text-boxes"></div>
-                <div class="text-boxes col-6">
-                    <form id="service-form" onsubmit="return sendServForm(this);">
+
+                <div class="text-boxes col-6 col-md-12 col-sm-12 drum-serv">
+                    <h3>servicing</h3>
+                    <p>
+                        The team at Drum Haven love nothing better than getting down and dirty if it involves drums. 
+
+                        We hate to see musical instruments go to waste, so that's why we pride ourselves on restoring 
+                        vintage all the way up to modern day drums and hardware. 
+
+                        Years of experience of taking things apart and putting them back together has allowed us to be able to offer our 
+                        tinkering services to you fine people! 
+
+                        Prices:
+
+                        Full Kit (5 Drums) : £200
+                        Individual Drums : From £30 and upwards
+
+                        Restoration prices, please get in touch! 
+                    </p>
+                    <img src="/assets/images/Tools.jpg" alt="Drum Tuning">
+                </div>
+
+
+                <div class="text-boxes col-6 col-md-12 col-sm-12">
+                    <h3>Book in now!</h3>
+                    <form id="serviceform" onsubmit="return sendServForm(this);">
 
                         <label for="servfuName">Full Name</label>
                         <br>
-                        <input type="text" name="servFuName" id="servFuName" required>
+                        <input type="text" name="servfuName" id="servfuName" required>
                         <br>
                         <label for="servEmail">Email</label>
                         <br>
@@ -54,6 +78,7 @@ emailjs.init("user_QJuX1a1bCxsE7peYvZrP3");
                         <br>
                         <select name="servStyle" id="servStyle" required>
 
+                            <option value="">--</option>
                             <option value="repair">Repair</option>
                             <option value="restoration">Restoration</option>
                             <option value="service">Service</option>
@@ -63,6 +88,7 @@ emailjs.init("user_QJuX1a1bCxsE7peYvZrP3");
                         <label for="servQuan">Full kit/Individual Drum(s)</label>
                         <br>
                             <select name="servQuan" id="servQuan" required>
+                                <option value="">--</option>
                                 <option value="fullkit">Full Kit</option>
                                 <option value="indiv">Individual Drum(s)</option>
                             </select>
@@ -74,24 +100,25 @@ emailjs.init("user_QJuX1a1bCxsE7peYvZrP3");
                         <br>
 
                         <br>
-                        <input type="submit" value="Fix my Drum(s)!">
+                        <input type="submit" id="submit" value="Fix my Drum(s)!">
                     </form>
                 </div>
         </div>
+        </div>
     </div>
-
+    <footer>
+        <div class="footer">
+            <a href="http://www.instagram.com/DrumHavenUK" target="blank"><i class="fab fa-instagram-square"></i></a>
+            <a href="http://www.facebook.com/DrumHavenUK" target="blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="http://www.twitter.com/DrumHavenUK" target="blank"><i class="fab fa-twitter-square"></i></a>
+        </div>
+    </footer>
     
 </body>
-<footer>
-    <div class="footer">
-        <a href="http://www.instagram.com/DrumHavenUK" target="blank"><i class="fab fa-instagram-square"></i></a>
-        <a href="http://www.facebook.com/DrumHavenUK" target="blank"><i class="fab fa-facebook-square"></i></a>
-        <a href="http://www.twitter.com/DrumHavenUK" target="blank"><i class="fab fa-twitter-square"></i></a>
-    </div>
-</footer>
+
 
 <script src="https://code.jquery.com/jquery-3.6.0.js"integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>  
     
-<script src="assets/js/myScript.js"></script>
+
 <script src="assets/js/sendEmail.js"></script>
 </html>

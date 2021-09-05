@@ -35,7 +35,8 @@ emailjs.init("user_QJuX1a1bCxsE7peYvZrP3");
         </div>
     </div>
         <div class="row">
-            <div class="col-6 col-sm-12 text-boxes cym-box">
+            <div class="col-6 col-sm-12 col-md-12 text-boxes cym-box">
+                <h3>Cymbal Repair</h3>
                 <p>
                 Using specialist techniques along with skills accquired over years of working with metals,
                 the team at Drum Haven are able to adapt their understanding and manipulate cymbals into new forms to allow 
@@ -47,12 +48,13 @@ emailjs.init("user_QJuX1a1bCxsE7peYvZrP3");
                 </p>
                 <img src="/assets/images/cymbalrepair.jpg" alt="Cymbal repair">
             </div>
-            <div class="col-6 text-boxes">
+            <div class="col-6 col-md-12 col-sm-12 text-boxes">
+                <h3>Book in now!</h3>
                     <form id="cym-form" onsubmit="return sendCymForm(this);">
 
                         <label for="cymfuName">Full Name</label>
                         <br>
-                        <input type="text" name="cymFuName" id="cymFuName" required>
+                        <input type="text" name="cymFuName" id="cymfuName" required>
                         <br>
                         <label for="cymEmail">Email</label>
                         <br>
@@ -67,6 +69,7 @@ emailjs.init("user_QJuX1a1bCxsE7peYvZrP3");
                         <br>
                         <select name="cymSize" id="cymSize" required>
 
+                            <option value="">--</option>
                             <option value="10">10"</option>
                             <option value="12">12"</option>
                             <option value="14">14"</option>
@@ -81,9 +84,10 @@ emailjs.init("user_QJuX1a1bCxsE7peYvZrP3");
                         <label for="cymDam">Type of damage</label>
                         <br>
                             <select name="cymDam" id="cymDam" required>
-                                <option value="bell">Bell</option>
-                                <option value="bow">Bow</option>
-                                <option value="edge">Edge</option>
+                                <option value="">--</option>
+                                <option value="1">Bell</option>
+                                <option value="2">Bow</option>
+                                <option value="3">Edge</option>
                             </select>
                         <br>
 
@@ -93,11 +97,13 @@ emailjs.init("user_QJuX1a1bCxsE7peYvZrP3");
                         <br>
 
                         <br>
-                        <input type="submit" value="Fix my Cymbal!">
+                        <input type="submit" id="submit" value="Fix my Cymbal!">
             
             </form>
+            </div>
 
         </div>
+</div>
     <footer>
         <div class="footer">
             <a href="http://www.instagram.com/DrumHavenUK" target="blank"><i class="fab fa-instagram-square"></i></a>
@@ -107,6 +113,6 @@ emailjs.init("user_QJuX1a1bCxsE7peYvZrP3");
     </footer>
 </body>    
 
-<script src="assets/js/myScript.js"></script>
+
 <script src="assets/js/sendEmail.js"></script>
 </html>
