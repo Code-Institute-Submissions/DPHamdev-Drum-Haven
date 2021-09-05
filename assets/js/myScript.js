@@ -1,6 +1,5 @@
 
 
-
 /* Mouse events for testimonials */
 
 $( "#christian" ).mouseenter(function() {$( "#christian-text" ).show() });
@@ -30,7 +29,7 @@ let bassDrum = [16, 18, 20, 22, 24, 26];
 let tom = [6, 8, 10, 12, 13, 14, 15, 16, 18,];
 let snare = [10, 12, 13, 14, 15];
 
-let tuneForm = document.createElement("form");
+/* let tuneForm = document.createElement("form");
 tuneForm.innerHTML = `
         <label for="fuName">Full Name</label>
         <br>
@@ -43,17 +42,17 @@ tuneForm.innerHTML = `
             <label for="bDrum">Bass Drum</label>
             <br>
             <label for="bDrum">16"</label>
-            <input type="checkbox" name="bDrum" id="bDrum" value="16">
+            <input type="checkbox" name="bDrum" id="bDrum16" value="16">
             <label for="bDrum">18"</label>
-            <input type="checkbox" name="bDrum" id="bDrum" value="18">
+            <input type="checkbox" name="bDrum" id="bDrum18" value="18">
             <label for="bDrum">20"</label>
-            <input type="checkbox" name="bDrum" id="bDrum" value="20">
+            <input type="checkbox" name="bDrum" id="bDrum20" value="20">
             <label for="bDrum">22"</label>
-            <input type="checkbox" name="bDrum" id="bDrum" value="22">
+            <input type="checkbox" name="bDrum" id="bDrum22" value="22">
             <label for="bDrum">24"</label>
-            <input type="checkbox" name="bDrum" id="bDrum" value="24">
+            <input type="checkbox" name="bDrum" id="bDrum24" value="24">
             <label for="bDrum">26"</label>
-            <input type="checkbox" name="bDrum" id="bDrum" value="26">
+            <input type="checkbox" name="bDrum" id="bDrum26" value="26">
             <br>
                 <label for="bDrum">Tom Drum</label>
                 <br>
@@ -94,7 +93,7 @@ tuneForm.innerHTML = `
                         <input type="text" name="notes">
                             <br>
                             <br>
-                            <input type="submit" onclick="add_element_to_array();" value="Tune my drums!">
+                            <input action="/form.html" method="post" type="submit" onclick="check();" value="Tune my drums!">
 `
 document.getElementById("drum-tuning").appendChild(tuneForm);
 
@@ -102,8 +101,44 @@ $("#tuneSubmit").click(function tuneSubmit() {
     $("input:checkbox[name=bDrum]:checked").each(function(){
         bassDrum.push($(this).val());
     }); return bassDrum
-})
+}) */
 
+let tuningForm = document.getElementById('tuning-form');
+tuningForm.addEventListener('submit', handleSubmitTune);
+
+function handleSubmitTune(event) {
+
+    event.preventDefault();
+
+    console.log('Submitting...');
+
+    let tuneFullName = tuningForm.elements['tuneFuName'].value 
+    let bassDrum = tuningForm.elements['bDrum'].value
+    let tuneBrand = tuningForm.elements['tuneBrand'].value
+    let tomDrum = tuningForm.elements['tDrum'].value
+    let snareDrum = tuningForm.elements['sDrum'].value
+    let notes = tuningForm.elements['tuneNotes'].value
+    let kSize = tuningForm.elements['kitSize'].value
+
+
+    let alertHtml = `Thank you ${tuneFullName} for submitting your tuning request. 
+    
+    Your kit spec includes:
+    Kit Size: ${kSize}
+    Brand: ${tuneBrand}
+    Bass Drum: ${bassDrum}
+    Tom Drums: ${tomDrum}
+    Snare Drum: ${snareDrum}
+    Any additional notes you've included: 
+    ${notes}
+    We'll respond to you soon`;
+
+    window.alert(alertHtml);
+    
+    return false;
+}
+
+/* let person = [];
 
 var x = 0;
 var array = Array();
@@ -112,12 +147,12 @@ function add_element_to_array()
 {
  array[x] = document.getElementById("bDrum").value;
  $("input:checkbox[name=bDrum]:checked").each(function(){
-    bassDrum.push($(this).val());
+    person.push($(this).val());
 });
  alert("Element: " + array[x] + " Added at index " + x);
  x++;
  document.getElementById("bDrum").value = "";
- return bassDrum
+ return person
 }
 
-console.log(bassDrum)
+console.log(person) */

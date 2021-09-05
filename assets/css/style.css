@@ -1,40 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro&family=Staatliches&display=swap');
 
+.row {
+  height: 25%;
+}
+
 body {
+  
   background-color: #594F4F;
 }
-/* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-       #map {
-        height: 50%;
-      }
-      
-      /* Optional: Makes the sample page fill the window. */
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
+/**************************************** Always set the map height explicitly to define 
+the size of the div 
+element that contains the map. */
 
-div #map {
-    min-height: 360px;
+#map {
+  
+  height: 50%;
+}
+      
+/**************************************** Optional: Makes the sample page fill the window. */
+
+html, body {
+  
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-/* a styling */
+div #map {
+  min-height: 360px;
+}
+
+/**************************************** a styling */
 
 nav a {
   font-family: 'staatliches', 'Times New Roman', Times, serif;
   color: white;
   font-size: 2em;
   list-style-type: none;
+  text-decoration: none;
 }
 
 a:hover {
   color: red;
 }
 
-/* h2 styling */
+/**************************************** h2 styling */
 
 h2 {
     text-transform: uppercase;
@@ -42,11 +52,10 @@ h2 {
     font-size: 80px;
     text-align: center;
     color: white;
-    text-decoration-color: white;
     letter-spacing: 2px;
 }
 
-/* h3 styling */
+/**************************************** h3 styling */
 
 h3 {
   text-transform: uppercase;
@@ -54,12 +63,10 @@ h3 {
   font-size: 50px;
   text-align: center;
   color: white;
-  text-decoration-color: white;
   letter-spacing: 2px;
-
 }
 
-/* p styling */
+/**************************************** p styling */
 
 p {
   font-family: 'Advent Pro', 'Times New Roman', Times, serif;
@@ -71,48 +78,58 @@ p {
   margin: 0;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 7.5px;
+/**************************************** Logo */
+
+.logoImg {
+  text-align: center;
+  height: 250px;
 }
 
-ul a {
-  font-family: 'Advent Pro', 'Times New Roman', Times, serif;
-  color: #fffb1f;
-  letter-spacing: 1.5px;
-  font-weight: 900;
-  text-decoration: none;
+.logoImg img {
+  max-height: 250px;
 }
 
-li a {
-  font-size: 1.2em;
+/**************************************** Footer Styling */
+
+.footer {
+  text-align: center;
 }
 
-/* Pictures on home page styling */
+.footer a {
+  color: white;
+  font-size: 40px;
+}
+
+.footer a:hover {
+  color: #594F4F;
+}
+
+/**************************************** Pictures on home page styling */
+
 .indexPic {
-  height: 100px;
-  width: 33%;
+  height: 275px;
   padding: 5px;
-  margin: 2px;
 }
 
 .indexPic p {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: antiquewhite;
+  color: white;
+  text-align: center;
+  background: black;
+  border: 1px solid white;
 }
 
-
+.indexRowPic {
+  margin: auto;
+  width: 100%;
+} 
 
 .indexPic img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  height: inherit;
+  height: 100%;
   border: 2px solid black;
 }
 
@@ -143,7 +160,7 @@ li a {
   overflow: hidden;
 }
 
-/* Styling for button */
+/**************************************** Styling for button */
 
 .pbox {
   background: #a5886c;
@@ -169,7 +186,13 @@ li a {
   color: #fffb1f;
 }
 
-/* Tuning Form Styling */
+/**************************************** Form Styling */
+
+#comments {
+  height: 100px;
+}
+
+/**************************************** Tuning Form Styling */
 
 #drum-tuning {
   font-size: larger;
@@ -178,16 +201,37 @@ li a {
   margin: 10px;
 }
 
-/* Max Widths */
+/**************************************** Max Widths */
 
 @media screen and (max-width: 550px) {
-  .serv-sm {
+.col-sm-12,  .serv-sm {
       flex: 0 0 auto;
       width: 100%;
-      padding: 25px;
+      padding: 15px;
   }
 }
 
+/**************************************** Nav Bar Mobile friendly */
+
+@media screen and (max-width: 550px) {
+nav {
+    font-size: small;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+.col-sm-12, .col-md-12 {
+      font-size: small;
+      text-align: center;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+  .col-md-4 {
+    width: fit-content;
+        }
+      }
 
 
 $container-max-widths: (

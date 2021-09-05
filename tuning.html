@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/5.15.0/css/font-awesome.min.css" type="text/css" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" >
+    <script src="https://code.jquery.com/jquery-3.6.0.js"integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
     <title>Drum Haven - Tuning</title>
 </head>
+
+<body>
 <header>
     <nav class="navbar navbar-dark bg-dark">
         <div>
@@ -19,11 +22,14 @@
         </div>  
     </nav>
 </header>
-<body>
+
+
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                <h2>Tuning</h2>
+            <div class="row">
+                <div class="logoImg col-sm-12 col">
+                    <img src="/assets/images/dhwhitelogo.png" alt="Drum Haven Logo">
+                </div>
             </div>
 
             <div class="text-boxes col-6">
@@ -37,20 +43,90 @@
             </div>
 
             <div class="text-boxes col-6">
-               <div id="drum-tuning"></div>
+               <div id="drum-tuning">
+                   <form id="tuning-form">
+                        <label for="tunefuName">Full Name</label>
+                        <br>
+                        <input type="text" name="tuneFuName" id="tuneFuName">
+                        <br>
+                        <label for="tuneBrand">Brand</label>
+                        <br>
+                        <input type="text" name="tuneBrand" id="tuneBrand">
+                        <br>
 
+                        <label for="kitSize">Kit Size</label>
+                        <br>
+                        <select name="kitSize" id="kitSize">
+
+                            <option value="4 Piece">4 Piece</option>
+                            <option value="5 Piece">5 Piece</option>
+
+                        </select>
+                        <br>
+                        <label for="bDrum">Bass Drum</label>
+                        <br>
+                            <select name="bassDrum" id="bDrum">
+                                <option value="16">16"</option>
+                                <option value="18">18"</option>
+                                <option value="20">20"</option>
+                                <option value="22">22"</option>
+                                <option value="24">24"</option>
+                                <option value="26">26"</option>
+                            </select>
+                        <br>
+
+                        <label for="tDrum">Tom Drums</label>
+                        <br>
+                            <select name="tomDrum" id="tDrum">
+                                <option value="10 12 14">10" 12" 14"</option>
+                                <option value="12 13 16">12" 13" 16"</option>
+                                <option value="10 12 16">10" 12" 16"</option>
+                                <option value="10 14">10" 14"</option>
+                                <option value="12 16">12" 16"</option>
+                                <option value="13 16">13" 16"</option>
+                            </select> 
+                        <br>
+                            
+                        <label for="sDrum">Snare Drum</label>
+                            
+                        <br>
+                            
+                            <select name="snareDrum" id="sDrum">
+                                <option value="10">10"</option>
+                                <option value="12">12"</option>
+                                <option value="13">13"</option>
+                                <option value="14">14"</option>
+                            </select>
+                        
+                        <br>
+
+                                <label for="tuneNotes">Notes</label>
+                                <br>
+                                <input type="text" name="tuneNotes" id="tuneNotes">
+                                    <br>
+
+                                    <br>
+                                    <input type="submit" value="Tune my drums!">
+               
+            </form>
 
             </div>
         </div>
     </div>
-    
-</body>
+</div> 
 
 <footer>
-    
+    <div class="footer">
+        <a href="http://www.instagram.com/DrumHavenUK" target="blank"><i class="fab fa-instagram-square"></i></a>
+        <a href="http://www.facebook.com/DrumHavenUK" target="blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="http://www.twitter.com/DrumHavenUK" target="blank"><i class="fab fa-twitter-square"></i></a>
+    </div>
 </footer>
+</body>
 
-<script src="https://code.jquery.com/jquery-3.6.0.js"integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>  
+
+
+  
     
 <script src="assets/js/myScript.js"></script>
 </html>
