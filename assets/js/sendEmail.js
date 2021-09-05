@@ -29,6 +29,7 @@ function sendTuneForm(contactForm) {
     .then(
         function(response) {
             console.log("SUCCESS", response);
+            document.getElementById("tuning-form").reset();
         },
         function(error) {
             console.log("FAILED", error);
@@ -51,6 +52,7 @@ function sendServForm(contactForm) {
     .then(
         function(response) {
             console.log("SUCCESS", response);
+            document.getElementById("serviceform").reset();
         },
         function(error) {
             console.log("FAILED", error);
@@ -73,10 +75,12 @@ function sendCymForm(contactForm) {
     .then(
         function(response) {
             console.log("SUCCESS", response);
+            
         },
         function(error) {
             console.log("FAILED", error);
         }
     );
-    return false;  // To block from loading a new page
+    document.getElementById("cym-form").reset();
+    return false;  // To block from loading a new page 
 }
