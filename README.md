@@ -1,104 +1,241 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Drum Haven
 
-Welcome DPHamdev,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
 
-## Gitpod Reminders
+This site has been developed for the purpose of allowing the business 'Drum Haven' to have further interaction with their clients through their website by displaying the services they offer and by allowing their customers the ability to get in touch with the business on a specific level regarding the services they'd like to engage in. 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+The site informs clients of the services on offer, as well as location, booking forms and a social media feed. 
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+This site is ideal for anyone looking to take on any services offered by Drum Haven. 
 
-Another blue button should appear to click: _Open Browser_.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+## Features
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
-------
+The site includes features which allow clients to see first hand what Drum Haven are as a business, in terms of their location, their social media feed on Twitter using a Twitter embedded API profile feed. 
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+It primarily focuses on the interaction between the client and the business being minimised and streamlined, making for a more productive and streamlined way of working and gaining new clients. 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+The goal for this site is to allow customers the ability to book their services through the website with functionality giving them clear and concise options in order to move forward with any services on offer. 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+# NAVIGATION
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Landing Page
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+When first landing on the page, you're encountered with a concise and clean webpage, detailing a basic biography of the business and staff.
 
-------
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
+It includes an embedded Twitter profile feed, enabling the clients to see what Drum Haven are engaging with on their social media accounts. Opting for the profile stream rather than specific tweets means that the user can interact with the profile more as a whole rather than being restricted say to the most recent post on the profile. 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+## Navigation Bar
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
 
-**So….?**
+The Navigation bar is position at the top of the page with bold links to the pages in order to make it easier to see where the client is selecting. Bold contrast between the background and colour of the links enhances the visual aspect of this feature too. 
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
 
-**Can I opt out?**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### Logo
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
 
-**Anything more?**
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+Included on all the pages is the brand logo, ensuring that the user familiarises themselves with the business identity throughout the website. The logo is featured in the same place on all the pages, opting for the logo rather than headings allows for continuity across the website. 
 
----
 
-Happy coding!
+
+### Text Box
+
+
+
+A small biography is included on this page to allow the user to understand what Drum Haven is and where it's come from. This means that the user understands from the first 5 minutes, what Drum Haven can help them with. 
+
+
+
+### Contact Form
+
+
+
+On this page is a contact-form including basic required fields along with a larger text box mean the user can express exactly what they want to ask Drum Haven should they have any enquiries. 
+
+
+
+This contact form will send an email to drumhavenuk@gmail.com including the form values inputted into the form element. It also sends an email to the individual's email along with a thank you message, as well detailing what they've specifically said, so that they're assured that their message has been received by the business. 
+
+
+
+### Google Maps
+
+
+
+Included on this page is a responsive Google Maps API, which is centered on the location in which Drum Haven is located in Swansea, South Wales (SA1 8DB). 
+
+
+
+By including this, it means the user can convenient visualise where Drum Haven is located and in turn make their decision possibly easier should the journey be suitable in order to visit. 
+
+
+
+### Footer
+
+
+
+A footer is also included on this site, detailing three social media links, positioned in the centre of the page in relatively large styling to ensure they're not visually lost and clear enough so as the user knows they're there. 
+
+
+
+The footer is located in the orientation including it's contents on every page, to ensure continuity. 
+
+
+
+
+
+## TUNING PAGE
+
+
+
+The Tuning page on Drum Haven enables the user to gain an understanding as to what the service is that's on offer. Giving a brief description of the service, means that the user gets all the information they need concisely, including expectations when it comes to the end product as well as the price of the service. 
+
+
+
+Also included on this page is a form enabling the user to be able to interact with the website, once filled out, the form once submitted will send an email detailing the form values inputted by the user to drumhavenuk@gmail.com. It also sends another email to the user once again reassuring them that the request has been received by the business. 
+
+
+
+## SERVICING PAGE
+
+
+
+The servicing page is another page, detailing the specific service on offer from Drum Haven that entails various aspects of care when it comes to looking after the clients drums. 
+
+
+
+This concise description means the user can once again, make their decision efficiently by deciphering the information on offer quickly.
+
+This page also allows the user the ability to be able to arrange a request specifically for their drums or drum singular. Allowing such functionality means that the client can interact with the business extremely quickly with the information required to be able to make it clear as to when the business will be able to accommodate the client's work. 
+
+
+
+
+
+## CYMBAL REPAIR
+
+
+
+This niche service provided by Drum Haven means that users can understand what it means to repair a cracked cymbal and restore value in expensive items. 
+
+
+
+By allowing the user the ability to give details of the cymbal needing a repair request, it allows the user and business to send and collect an adequate amount of information required to move forward past the first line of enquiry. 
+
+
+
+
+
+All contact forms included on this site mean that the user is made aware that their requests have been received, by using EmailJS's API, it allows the business to provide a professional image and maintain personality by reassuring the customer that they'll be responded to promptly. 
+
+
+
+## DEPLOYMENT
+
+
+
+This project was developed using gitpod and pushed to GitHub using the build function within gitpod.
+
+Deploying the page to GitHub pages from it's repository required:
+
+1. Log into Github
+
+2. Select the repository labelled DPHamdev/Drum-Haven
+
+3. Select Settings within the menu
+
+4. Navigate to the pages tab
+
+5. Within source, in the drop down labelled 'None', select Branch: main with the / (root) selected in other dropdown. Save these changes.
+
+6. A green box displaying a link to the deployed website will appear under the GitHub Pages heading.
+
+To run this page locally you're required to:
+
+1. Open Gitpod from within the repository.
+
+2. In the terminal window, type "python3 -m http.server"
+
+3. Open the site in preview or browser once the port has been made public.
+
+4. To close this and be able to work within the terminal window again, press "ctrl and c"
+
+
+
+## CREDITS
+
+
+
+### Google Maps API
+
+Using the Google Maps API from https://developers.google.com/maps means that I was able to provide user familiarity to a prospectively new client. 
+
+
+
+### Twitter API
+
+Including Twitters API from https://developer.twitter.com/en allowed the user access to the business' profile in a more conducive and interactive way. 
+
+
+
+
+
+### Navbar
+
+I used the framework for the Navbar from https://getbootstrap.com/docs/4.0/components/navbar/ 
+
+
+
+### Bootstrap
+
+I used the framework for the grid system of laying out the website using https://getbootstrap.com/ 
+
+
+
+### FontAwesome
+
+All my icons are from https://fontawesome.com/
+
+
+
+### GoogleFonts
+
+All my fonts are from https://fonts.google.com/ 
+
+
+
+### EmailJS
+
+
+
+Providing ultimate interaction between user and business was utilised by using https://www.emailjs.com/ API framework of building email templates and automated systems. 
+
+
+
+## Images
+
+All images are either from www.pexels.com or they're owned by myself. 
