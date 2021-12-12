@@ -69,7 +69,205 @@
                         <input type="text" name="tuneBrand" id="tuneBrand" required>
                         <br>
 
-                        <label for="kitSize">Kit Size</label>
+
+                        <select id='options' onchange="kitselect()">
+                            <option value="0">Select Kit Size</option>
+                            <option value="1">3 Piece</option>
+                            <option value="2">4 Piece</option>
+                            <option value="3">5 Piece</option>
+                          </select>
+                          <form>
+                            <div style='display:none;' id='optionA'>
+                              <br>3 Piece:&nbsp;
+                              <br>
+                              <label for='3pckick'>Kick</label>
+                              <select id='3pckick' name='3pckick' onchange="threepckickTun(this)">
+                                  <option value="kick">Kick Size</option>
+                                  <option value="18">18"</option>
+                                  <option value="20">20"</option>
+                                  <option value="22">22"</option>
+                                  <option value="24">24"</option>
+                              </select>
+                              <br/>
+                              <div id="3pckicktune"></div>
+                              <br>
+                              
+                              
+                              <label for='3pcsn'>Snare</label>
+                              <select id='3pcsn' name='3pcsn' onchange="threepcsnTun(this)">
+                                  <option value="snare">Snare Size</option>
+                                  <option value="10">10"</option>
+                                  <option value="12">12"</option>
+                                  <option value="13">13"</option>
+                                  <option value="14">14"</option>
+                              </select>
+                              <br/>
+                              <div id='3pcsntune'>
+                              </div>
+                              
+                               <br>
+                              <label for='3pctom'>Tom</label>
+                              <select id='3pctom' name='3pctom' onchange="threepctomTun(this)">
+                                  <option value="tom">Tom Size</option>
+                                  <option value="8">8"</option>
+                                  <option value="10">10"</option>
+                                  <option value="12">12"</option>
+                                  <option value="13">13"</option>
+                                  <option value="14">14"</option>
+                                  <option value="16">16"</option>
+                                  <option value="18">18"</option>
+                              </select>
+                              <br/>
+                              <div id="3pctomtune"></div>
+                              <br>
+                              
+                              </div>
+                              
+                              
+                              <div style='display:none;' id='optionB'>
+                              
+                              <br>4 Piece:&nbsp;
+                              <br>
+                              <label for='4pckick'>Kick</label>
+                              <select id='4pckick' name='4pckick' onchange="fourpckickTun(this)">
+                                  <option value="kick">Kick Size</option>
+                                  <option value="18">18"</option>
+                                  <option value="20">20"</option>
+                                  <option value="22">22"</option>
+                                  <option value="24">24"</option>
+                              </select>
+                              <br/>
+                              <div id="4pckicktune"></div>
+                              <br>
+                              
+                              
+                              <label for='4pcsn'>Snare</label>
+                              <select id='4pcsn' name='4pcsn' onchange="fourpcsnTun(this)">
+                                  <option value="snare">Snare Size</option>
+                                  <option value="10">10"</option>
+                                  <option value="12">12"</option>
+                                  <option value="13">13"</option>
+                                  <option value="14">14"</option>
+                              </select>
+                              <br/>
+                              <div id='4pcsntune'>
+                              </div>
+                              
+                               <br>
+                              <label for='4pctom1'>Tom 1</label>
+                              <select id='4pctom1' name='4pctom1' onchange="fourpctomoneTun(this)">
+                                  <option value="tom">Tom Size</option>
+                                  <option value="8">8"</option>
+                                  <option value="10">10"</option>
+                                  <option value="12">12"</option>
+                                  <option value="13">13"</option>
+                                  <option value="14">14"</option>
+                                  <option value="16">16"</option>
+                                  <option value="18">18"</option>
+                              </select>
+                              <br/>
+                              <div id="4pctom1tune"></div>
+                              <br>
+                              
+                              
+                               <br>
+                              <label for='4pctom2'>Tom 2</label>
+                              <select id='4pctom2' name='4pctom2' onchange="fourpctomtwoTun(this)">
+                                  <option value="tom">Tom Size</option>
+                                  <option value="8">8"</option>
+                                  <option value="10">10"</option>
+                                  <option value="12">12"</option>
+                                  <option value="13">13"</option>
+                                  <option value="14">14"</option>
+                                  <option value="16">16"</option>
+                                  <option value="18">18"</option>
+                              </select>
+                              <br/>
+                              <div id="4pctom2tune"></div>
+                              <br>
+                            </div>
+                            
+                            
+                            <div style='display:none;' id='optionC'>
+                              
+                              <br>5 Piece:&nbsp;
+                              <br>
+                              <label for='5pckick'>Kick</label>
+                              <select id='5pckick' name='5pckick' onchange="fivepckickTun(this)">
+                                  <option value="kick">Kick Size</option>
+                                  <option value="18">18"</option>
+                                  <option value="20">20"</option>
+                                  <option value="22">22"</option>
+                                  <option value="24">24"</option>
+                              </select>
+                              <br/>
+                              <div id="5pckicktune"></div>
+                              <br>
+                              
+                              
+                              <label for='5pcsn'>Snare</label>
+                              <select id='5pcsn' name='5pcsn' onchange="fivepcsnTun(this)">
+                                  <option value="kick">Snare Size</option>
+                                  <option value="18">10"</option>
+                                  <option value="20">12"</option>
+                                  <option value="22">13"</option>
+                                  <option value="24">14"</option>
+                              </select>
+                              <br/>
+                              <div id='5pcsntune'>
+                              </div>
+                              
+                               <br>
+                              <label for='5pctom1'>Tom 1</label>
+                              <select id='5pctom1' name='5pctom1' onchange="fivepctomoneTun(this)">
+                                  <option value="tom">Tom Size</option>
+                                  <option value="8">8"</option>
+                                  <option value="10">10"</option>
+                                  <option value="12">12"</option>
+                                  <option value="13">13"</option>
+                                  <option value="14">14"</option>
+                                  <option value="16">16"</option>
+                                  <option value="18">18"</option>
+                              </select>
+                              <br/>
+                              <div id="5pctom1tune"></div>
+                              <br>
+                              
+                              
+                               <br>
+                              <label for='5pctom2'>Tom 2</label>
+                              <select id='5pctom2' name='5pctom2' onchange="fivepctomtwoTun(this)">
+                                  <option value="tom">Tom Size</option>
+                                  <option value="8">8"</option>
+                                  <option value="10">10"</option>
+                                  <option value="12">12"</option>
+                                  <option value="13">13"</option>
+                                  <option value="14">14"</option>
+                                  <option value="16">16"</option>
+                                  <option value="18">18"</option>
+                              </select>
+                              <br/>
+                              <div id="5pctom2tune"></div>
+                              <br>
+                              <br>
+                              <label for='5pctom3'>Tom 3</label>
+                              <select id='5pctom3' name='5pctom3' onchange="fivepctomthreeTun(this)">
+                                  <option value="tom">Tom Size</option>
+                                  <option value="8">8"</option>
+                                  <option value="10">10"</option>
+                                  <option value="12">12"</option>
+                                  <option value="13">13"</option>
+                                  <option value="14">14"</option>
+                                  <option value="16">16"</option>
+                                  <option value="18">18"</option>
+                              </select>
+                              <br/>
+                              <div id="5pctom3tune"></div>
+                              <br>
+                            </div>
+
+
+                        <!-- <label for="kitSize">Kit Size</label>
                         <br>
                         <select name="kitSize" id="kitSize" required>
                             <option value="">--</option>
@@ -111,7 +309,7 @@
                                     <br>
 
                                     <br>
-                                    <input type="submit" id="submit" value="Tune my drums!">
+                                    <input type="submit" id="submit" value="Tune my drums!"> -->
                
             </form>
 
