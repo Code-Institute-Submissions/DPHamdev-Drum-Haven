@@ -153,7 +153,7 @@ let FoPcKiTu = document.getElementById('fourpckick');
 	/* snare functon tuning */
 
 function fourpcsnTun (slction) {
-	let FoPcSnTu = document.getElementById('4pcsn');
+	let FoPcSnTu = document.getElementById('fourpcsn');
   if (FoPcSnTu.value == '10') {
   	document.getElementById('4pcsntune').innerHTML = "The Tuning is " + tunings[33];
     }
@@ -174,8 +174,8 @@ function fourpcsnTun (slction) {
 	/* 1 tom function tuning */
 
 function fourpctomoneTun (slction) {
-	let FoPcToOneTu = document.getElementById('4pctom1');
-  let FoPcToTwoTu = document.getElementById('4pctom2');
+	let FoPcToOneTu = document.getElementById('fourpctomone');
+  let FoPcToTwoTu = document.getElementById('fourpctomtwo');
   if (FoPcToOneTu.value == '8') {
   	document.getElementById('4pctom1tune').innerHTML = "The Tuning is " + tunings[26];
     }
@@ -205,8 +205,8 @@ function fourpctomoneTun (slction) {
 	/* 2 tom function tuning */
 
 function fourpctomtwoTun (slction) {
-  let FoPcToOneTu = document.getElementById('4pctom1');
-  let FoPcToTwoTu = document.getElementById('4pctom2');
+  let FoPcToOneTu = document.getElementById('fourpctomone');
+  let FoPcToTwoTu = document.getElementById('fourpctomtwo');
   if (FoPcToTwoTu.value == '8' && FoPcToOneTu.value == '8') {
   	document.getElementById('4pctom2tune').innerHTML = "This tuning pair isn't possible, please select a larger drum.";
     }
@@ -345,7 +345,7 @@ function fourpctomtwoTun (slction) {
 	/* kick function tuning */
 
 function fivepckickTun (slction) {
-  let FiPcKiTu = document.getElementById('5pckick');
+  let FiPcKiTu = document.getElementById('fivepckick');
   if (FiPcKiTu.value == '18') {
   	document.getElementById('5pckicktune').innerHTML = "The Tuning is " + tunings[7];
     }
@@ -366,7 +366,7 @@ function fivepckickTun (slction) {
 	/* snare function tuning */
 
 function fivepcsnTun (slction) {
-	let FiPcSnTu = document.getElementById('5pcsn');
+	let FiPcSnTu = document.getElementById('fivepcsn');
   if (FiPcSnTu.value == '10') {
   	document.getElementById('5pcsntune').innerHTML = "The Tuning is " + tunings[33];
     }
@@ -387,7 +387,7 @@ function fivepcsnTun (slction) {
 	/* 1 tom function tuning */
 
 function fivepctomoneTun (slction) {
-	let FiPcToOneTu = document.getElementById('5pctom1');
+	let FiPcToOneTu = document.getElementById('fivepctomone');
   if (FiPcToOneTu.value == '8') {
   	document.getElementById('5pctom1tune').innerHTML = "The Tuning is " + tunings[26];
     }
@@ -417,8 +417,8 @@ function fivepctomoneTun (slction) {
 	/* 2 tom function tuning */
 
 function fivepctomtwoTun (slction) {
-		let FiPcToOneTu = document.getElementById('5pctom1');
-  	let FiPcToTwoTu = document.getElementById('5pctom2');
+		let FiPcToOneTu = document.getElementById('fivepctomone');
+  	let FiPcToTwoTu = document.getElementById('fivepctomtwo');
 		if (FiPcToTwoTu.value == '8' && FiPcToOneTu.value == '8') {
   	document.getElementById('5pctom2tune').innerHTML = "This tuning pair isn't possible, please select a larger drum.";
     }
@@ -554,9 +554,9 @@ function fivepctomtwoTun (slction) {
 	/* 3 tom function tuning */
 
 function fivepctomthreeTun (slction) {
-		let FiPcToOneTu = document.getElementById('5pctom1');
-  	let FiPcToTwoTu = document.getElementById('5pctom2');
-    let FiPcToThrTu = document.getElementById('5pctom3');
+		let FiPcToOneTu = document.getElementById('fivepctomone');
+  	let FiPcToTwoTu = document.getElementById('fivepctomtwo');
+    let FiPcToThrTu = document.getElementById('fivepctomthree');
     /* 8 inch smallest tom tuning */
 		if (FiPcToThrTu.value == '8' && FiPcToTwoTu.value == '8' && FiPcToOneTu.value == '8') {
   		document.getElementById('5pctom3tune').innerHTML = "This tuning isn't possible, please select a larger drum.";
