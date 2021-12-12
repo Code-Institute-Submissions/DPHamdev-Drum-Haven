@@ -20,7 +20,7 @@ function sendForm(contactForm) {
 function sendTuneForm(contactForm) {
     let kitsize = document.getElementById('options');
     if (kitsize.value == '3pc') {
-        emailjs.send('Gmail', 'Tuning', {
+        emailjs.send('Gmail', '3pcTuning', {
             "from_name": contactForm.tunefuName.value,
             "from_email": contactForm.tuneEmail.value,
             "kitsize": contactForm.options.value,
