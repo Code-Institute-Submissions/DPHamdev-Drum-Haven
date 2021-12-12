@@ -42,8 +42,8 @@ function sendTuneForm(contactForm) {
         threepctunedisplay.style.display = "none"
         return false;  // To block from loading a new page
     }
-    if (kitsize.value == '4pc') {
-        emailjs.send('Gmail', 'Tuning', {
+    else if (kitsize.value == '4pc') {
+        emailjs.send('Gmail', '4pcTuning', {
             "from_name": contactForm.tunefuName.value,
             "from_email": contactForm.tuneEmail.value,
             "kitsize": contactForm.options.value,
@@ -61,13 +61,13 @@ function sendTuneForm(contactForm) {
                 console.log("FAILED", error);
             }
         );
-        document.getElementById("tuning-form").reset();
         let fourpctunedisplay = document.getElementsByClassName("4pctune");
         fourpctunedisplay.style.display = "none"
+        document.getElementById("tuning-form").reset();
         return false;  // To block from loading a new page
     }
-    if (kitsize.value == '5pc') {
-        emailjs.send('Gmail', 'Tuning', {
+    else if (kitsize.value == '5pc') {
+        emailjs.send('Gmail', '5pcTuning', {
             "from_name": contactForm.tunefuName.value,
             "from_email": contactForm.tuneEmail.value,
             "kitsize": contactForm.options.value,
@@ -86,9 +86,9 @@ function sendTuneForm(contactForm) {
                 console.log("FAILED", error);
             }
         );
-        document.getElementById("tuning-form").reset();
         let fivepctunedisplay = document.getElementsByClassName("5pctune");
         fivepctunedisplay.style.display = "none"
+        document.getElementById("tuning-form").reset();
         return false;  // To block from loading a new page
     }
 }
