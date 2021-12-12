@@ -1,42 +1,39 @@
 /* Kit size function */
 
 function kitselect() {
-	let kitsize = document.getElementById('options');
-  let kitone = document.getElementById('optionA');
-  let kittwo = document.getElementById('optionB');
-  let kitthree = document.getElementById('optionC');
-  if (kitsize.value == "1") {
+    let kitsize = document.getElementById('options');
+    let kitone = document.getElementById('optionA');
+    let kittwo = document.getElementById('optionB');
+    let kitthree = document.getElementById('optionC');
+  if (kitsize.value == "3pc") {
       	if (kitone.style.display == "none") {
       			kitone.style.display = "block";
             kittwo.style.display = "none";
             kitthree.style.display = "none";
-            kitfour.style.display = "none";
       } else {
       	kitone.style.display = "none";
       }
   	}
-  	else if (kitsize.value == "2") {
+  	else if (kitsize.value == "4pc") {
       	if (kittwo.style.display == "none") {
       			kitone.style.display = "none";
             kittwo.style.display = "block";
             kitthree.style.display = "none";
-            kitfour.style.display = "none";
       } else {
       	kittwo.style.display = "none";
       }
     }
-    else if (kitsize.value == "3") {
+    else if (kitsize.value == "5pc") {
       	if (kitthree.style.display == "none") {
       			kitone.style.display = "none";
             kittwo.style.display = "none";
             kitthree.style.display = "block";
-            kitfour.style.display = "none";
       } else {
       	kittwo.style.display = "none";
       }
     }
     else {
-    	kitsize.value == "0"
+    	kitsize.value == "kitsize"
     }
 }
 
@@ -60,7 +57,7 @@ let tunings = [
 	/* kick function tuning */
 
 function threepckickTun (slction) {
-	let ThPcKiTu = document.getElementById('3pckick');
+	let ThPcKiTu = document.getElementById('threepckick');
   if (ThPcKiTu.value == '18') {
   	document.getElementById('3pckicktune').innerHTML = "The Tuning is " + tunings[7];
     }
@@ -81,7 +78,7 @@ function threepckickTun (slction) {
 	/* snare function tuning */
 
 function threepcsnTun (slction) {
-	let ThPcSnTu = document.getElementById('3pcsn');
+	let ThPcSnTu = document.getElementById('threepcsn');
   if (ThPcSnTu.value == '10') {
   	document.getElementById('3pcsntune').innerHTML = "The Tuning is " + tunings[31];
     }
@@ -102,7 +99,7 @@ function threepcsnTun (slction) {
 	/* 1 tom function tuning */
 
 function threepctomTun (slction) {
-	let ThPcToTu = document.getElementById('3pctom');
+	let ThPcToTu = document.getElementById('threepctom');
   if (ThPcToTu.value == '8') {
   	document.getElementById('3pctomtune').innerHTML = "The Tuning is " + tunings[26];
     }
@@ -135,7 +132,7 @@ function threepctomTun (slction) {
 /* kick function tuning */
 	
 function fourpckickTun (slction) {
-let FoPcKiTu = document.getElementById('4pckick');
+let FoPcKiTu = document.getElementById('fourpckick');
   if (FoPcKiTu.value == '18') {
   	document.getElementById('4pckicktune').innerHTML = "The Tuning is " + tunings[7];
     }

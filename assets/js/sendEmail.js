@@ -18,25 +18,79 @@ function sendForm(contactForm) {
 /********************* Drum Tuning Form Email Function */
 
 function sendTuneForm(contactForm) {
-    emailjs.send('Gmail', 'Tuning', {
-        "from_name": contactForm.tunefuName.value,
-        "from_email": contactForm.tuneEmail.value,
-        "kitsize": contactForm.kitSize.value,
-        "bassdrum": contactForm.bDrum.value,
-        "snaredrum": contactForm.sDrum.value,
-        "tomsizes": contactForm.tomNotes.value,
-    })
-    .then(
-        function(response) {
-            console.log("SUCCESS", response);
-            
-        },
-        function(error) {
-            console.log("FAILED", error);
-        }
-    );
-    document.getElementById("tuning-form").reset();
-    return false;  // To block from loading a new page
+    let kitsize = document.getElementById('options');
+    if (kitsize.value == '3pc') {
+        emailjs.send('Gmail', 'Tuning', {
+            "from_name": contactForm.tunefuName.value,
+            "from_email": contactForm.tuneEmail.value,
+            "kitsize": contactForm.options.value,
+            "3pcbassdrum": contactForm.threepckick.value,
+            "3pcsnaredrum": contactForm.threepcsn.value,
+            "3pctom": contactForm.threepctom.value,
+        })
+        .then(
+            function(response) {
+                console.log("SUCCESS", response);
+                
+            },
+            function(error) {
+                console.log("FAILED", error);
+            }
+        );
+        document.getElementById("tuning-form").reset();
+        let threepctunedisplay = document.getElementsByClassName("3pctune");
+        threepctunedisplay.style.display = "none"
+        return false;  // To block from loading a new page
+    }
+    if (kitsize.value == '4pc') {
+        emailjs.send('Gmail', 'Tuning', {
+            "from_name": contactForm.tunefuName.value,
+            "from_email": contactForm.tuneEmail.value,
+            "kitsize": contactForm.options.value,
+            "4pcbassdrum": contactForm.fourpckick.value,
+            "4pcsnaredrum": contactForm.fourpcsn.value,
+            "4pctomone": contactForm.fourpctomone.value,
+            "4pctomtwo": contactForm.fourpctomtwo.value,
+        })
+        .then(
+            function(response) {
+                console.log("SUCCESS", response);
+                
+            },
+            function(error) {
+                console.log("FAILED", error);
+            }
+        );
+        document.getElementById("tuning-form").reset();
+        let fourpctunedisplay = document.getElementsByClassName("4pctune");
+        fourpctunedisplay.style.display = "none"
+        return false;  // To block from loading a new page
+    }
+    if (kitsize.value == '5pc') {
+        emailjs.send('Gmail', 'Tuning', {
+            "from_name": contactForm.tunefuName.value,
+            "from_email": contactForm.tuneEmail.value,
+            "kitsize": contactForm.options.value,
+            "5pcbassdrum": contactForm.fivepckick.value,
+            "5pcsnaredrum": contactForm.fivepcsn.value,
+            "5pctomone": contactForm.fivepctomone.value,
+            "5pctomtwo": contactForm.fivepctomtwo.value,
+            "5pctomthree": contactForm.fivepctomthree.value,
+        })
+        .then(
+            function(response) {
+                console.log("SUCCESS", response);
+                
+            },
+            function(error) {
+                console.log("FAILED", error);
+            }
+        );
+        document.getElementById("tuning-form").reset();
+        let fivepctunedisplay = document.getElementsByClassName("5pctune");
+        fivepctunedisplay.style.display = "none"
+        return false;  // To block from loading a new page
+    }
 }
 
 /********************* Drum Service Form Email Function */
