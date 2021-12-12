@@ -193,6 +193,10 @@ form {
 
 /**************************************** Tuning Form Styling */
 
+#optionA, #optionB, #optionC {
+  display: none;
+}
+
 
 .drum-tuning img {
   width: 100%;
