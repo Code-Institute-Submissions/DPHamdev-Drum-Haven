@@ -81,6 +81,7 @@
                             <div style='display:none;' id='optionA'>
                               <br>3 Piece:&nbsp;
                               <br>
+                              <p class="form-text">Please select a kick size.</p>
                               <label for='threepckick'>Kick</label>
                               <select id='threepckick' name='threepckick' onchange="threepckickTun(this)">
                                   <option value="kick">Kick Size</option>
@@ -93,7 +94,7 @@
                               <div class="3pctune" id="3pckicktune"></div>
                               <br>
                               
-                              
+                              <p class="form-text">Please select a snare size.</p>
                               <label for='threepcsn'>Snare</label>
                               <select id='threepcsn' name='threepcsn' onchange="threepcsnTun(this)">
                                   <option value="snare">Snare Size</option>
@@ -107,6 +108,7 @@
                               </div>
                               
                                <br>
+                               <p class="form-text">Please select a tom size, starting with the smallest size.</p>
                               <label for='threepctom'>Tom</label>
                               <select id='threepctom' name='threepctom' onchange="threepctomTun(this)">
                                   <option value="tom">Tom Size</option>
@@ -130,6 +132,7 @@
                               
                               <br>4 Piece:&nbsp;
                               <br>
+                              <p class="form-text">Please select a kick size.</p>
                               <label for='fourpckick'>Kick</label>
                               <select id='fourpckick' name='fourpckick' onchange="fourpckickTun(this)">
                                   <option value="kick">Kick Size</option>
@@ -142,7 +145,7 @@
                               <div class="4pctune" id="4pckicktune"></div>
                               <br>
                               
-                              
+                              <p class="form-text">Please select a snare size.</p>
                               <label for='fourpcsn'>Snare</label>
                               <select id='fourpcsn' name='fourpcsnsn' onchange="fourpcsnTun(this)">
                                   <option value="snare">Snare Size</option>
@@ -156,6 +159,7 @@
                               </div>
                               
                                <br>
+                               <p class="form-text">Please select a tom size, starting with the smallest size.</p>
                               <label for='fourpctomone'>Tom 1</label>
                               <select id='fourpctomone' name='fourpctomone' onchange="fourpctomoneTun(this)">
                                   <option value="tom">Tom Size</option>
@@ -173,6 +177,7 @@
                               
                               
                                <br>
+                               <p class="form-text">Please select a tom size, larger than your first tom.</p>
                               <label for='fourpctomtwo'>Tom 2</label>
                               <select id='fourpctomtwo' name='fourpctomtwo' onchange="fourpctomtwoTun(this)">
                                   <option value="tom">Tom Size</option>
@@ -197,6 +202,7 @@
                               
                               <br>5 Piece:&nbsp;
                               <br>
+                              <p class="form-text">Please select a kick size.</p>
                               <label for='fivepckick'>Kick</label>
                               <select id='fivepckick' name='fivepckick' onchange="fivepckickTun(this)">
                                   <option value="kick">Kick Size</option>
@@ -209,7 +215,8 @@
                               <div class="5pctune" id="5pckicktune"></div>
                               <br>
                               
-                              
+                              <br>
+                              <p class="form-text">Please select a snare size.</p>
                               <label for='fivepcsn'>Snare</label>
                               <select id='fivepcsn' name='fivepcsn' onchange="fivepcsnTun(this)">
                                   <option value="kick">Snare Size</option>
@@ -223,6 +230,7 @@
                               </div>
                               
                                <br>
+                               <p class="form-text">Please select a tom size, starting with the smallest size.</p>
                               <label for='fivepctomone'>Tom 1</label>
                               <select id='fivepctomone' name='fivepctomone' onchange="fivepctomoneTun(this)">
                                   <option value="tom">Tom Size</option>
@@ -240,6 +248,7 @@
                               
                               
                                <br>
+                               <p class="form-text">Please select a tom size, larger than your first tom.</p>
                               <label for='fivepctomtwo'>Tom 2</label>
                               <select id='fivepctomtwo' name='fivepctomtwo' onchange="fivepctomtwoTun(this)">
                                   <option value="tom">Tom Size</option>
@@ -255,6 +264,7 @@
                               <div class="5pctune" id="5pctom2tune"></div>
                               <br>
                               <br>
+                              <p class="form-text">Please select a tom size, larger than your first tom.</p>
                               <label for='fivepctomthree'>Tom 3</label>
                               <select id='fivepctomthree' name='fivepctomthree' onchange="fivepctomthreeTun(this)">
                                   <option value="tom">Tom Size</option>
@@ -270,49 +280,6 @@
                               <div class="5pctune" id="5pctom3tune"></div>
                               <br>
                             </div>
-
-
-                        <!-- <label for="kitSize">Kit Size</label>
-                        <br>
-                        <select name="kitSize" id="kitSize" required>
-                            <option value="">--</option>
-                            <option value="4-piece">4 Piece</option>
-                            <option value="5-Piece">5 Piece</option>
-
-                        </select>
-                        <br>
-                        <label for="bDrum">Bass Drum</label>
-                        <br>
-                            <select name="bassDrum" id="bDrum" required>
-                                <option value="">--</option>
-                                <option value="16">16"</option>
-                                <option value="18">18"</option>
-                                <option value="20">20"</option>
-                                <option value="22">22"</option>
-                                <option value="24">24"</option>
-                                <option value="26">26"</option>
-                            </select>
-                        <br>
-                            
-                        <label for="sDrum">Snare Drum</label>
-                            
-                        <br>
-                            
-                            <select name="snareDrum" id="sDrum" required>
-                                <option value="">--</option>
-                                <option value="10">10"</option>
-                                <option value="12">12"</option>
-                                <option value="13">13"</option>
-                                <option value="14">14"</option>
-                            </select>
-                        
-                        <br> 
-
-                                <label for="tomNotes">Tom Drum Sizes</label>
-                                <br>
-                                <input type="text" name="tomNotes" id="tomNotes" required>
-                                    <br>
--->                                 
                                     <br>
                                     <br>
                                     <input type="submit" id="submit" value="Tune my drums!">
