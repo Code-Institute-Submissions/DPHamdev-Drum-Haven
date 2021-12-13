@@ -188,11 +188,20 @@ p {
 }
 
 form {
-  color: white;
+  color: burlywood;
   top: 50%;
   left: 50%;
-  text-shadow: 1px 1px #86c232;
-  font-size: x-large;
+  font-size: large;
+  font-family: 'Acme', 'Times New Roman', Times, serif;
+  padding: 2px;
+  margin: 2px;
+}
+
+form p {
+  color: burlywood;
+  top: 50%;
+  left: 50%;
+  font-size: medium;
   font-family: 'Acme', 'Times New Roman', Times, serif;
   padding: 2px;
   margin: 2px;

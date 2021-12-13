@@ -70,6 +70,8 @@
                         <br>
                         <br>
                         <!-- Kit Selector -->
+                        <br>
+                        <p class="formtext">Please select a kit size.</p>
                         <select id='options' onchange="kitselect()">
                             <option value="kitsize">Select Kit Size</option>
                             <option value="3pc">3 Piece</option>
@@ -81,8 +83,8 @@
                             <div style='display:none;' id='optionA'>
                               <br>3 Piece:&nbsp;
                               <br>
-                              <p class="form-text">Please select a kick size.</p>
-                              <label for='threepckick'>Kick</label>
+                              <p class="formtext">Please select a kick size.</p>
+                              <label for='threepckick'>Kick: </label>
                               <select id='threepckick' name='threepckick' onchange="threepckickTun(this)">
                                   <option value="kick">Kick Size</option>
                                   <option value="18">18"</option>
@@ -94,8 +96,8 @@
                               <div class="3pctune" id="3pckicktune"></div>
                               <br>
                               
-                              <p class="form-text">Please select a snare size.</p>
-                              <label for='threepcsn'>Snare</label>
+                              <p class="formtext">Please select a snare size.</p>
+                              <label for='threepcsn'>Snare: </label>
                               <select id='threepcsn' name='threepcsn' onchange="threepcsnTun(this)">
                                   <option value="snare">Snare Size</option>
                                   <option value="10">10"</option>
@@ -108,8 +110,8 @@
                               </div>
                               
                                <br>
-                               <p class="form-text">Please select a tom size, starting with the smallest size.</p>
-                              <label for='threepctom'>Tom</label>
+                               <p class="formtext">Please select a tom size.</p>
+                              <label for='threepctom'>Tom: </label>
                               <select id='threepctom' name='threepctom' onchange="threepctomTun(this)">
                                   <option value="tom">Tom Size</option>
                                   <option value="8">8"</option>
@@ -132,8 +134,8 @@
                               
                               <br>4 Piece:&nbsp;
                               <br>
-                              <p class="form-text">Please select a kick size.</p>
-                              <label for='fourpckick'>Kick</label>
+                              <p class="formtext">Please select a kick size.</p>
+                              <label for='fourpckick'>Kick: </label>
                               <select id='fourpckick' name='fourpckick' onchange="fourpckickTun(this)">
                                   <option value="kick">Kick Size</option>
                                   <option value="18">18"</option>
@@ -145,8 +147,8 @@
                               <div class="4pctune" id="4pckicktune"></div>
                               <br>
                               
-                              <p class="form-text">Please select a snare size.</p>
-                              <label for='fourpcsn'>Snare</label>
+                              <p class="formtext">Please select a snare size.</p>
+                              <label for='fourpcsn'>Snare: </label>
                               <select id='fourpcsn' name='fourpcsnsn' onchange="fourpcsnTun(this)">
                                   <option value="snare">Snare Size</option>
                                   <option value="10">10"</option>
@@ -159,8 +161,8 @@
                               </div>
                               
                                <br>
-                               <p class="form-text">Please select a tom size, starting with the smallest size.</p>
-                              <label for='fourpctomone'>Tom 1</label>
+                               <p class="formtext">Please select a tom size, starting with the smallest size.</p>
+                              <label for='fourpctomone'>Tom 1: </label>
                               <select id='fourpctomone' name='fourpctomone' onchange="fourpctomoneTun(this)">
                                   <option value="tom">Tom Size</option>
                                   <option value="8">8"</option>
@@ -177,8 +179,8 @@
                               
                               
                                <br>
-                               <p class="form-text">Please select a tom size, larger than your first tom.</p>
-                              <label for='fourpctomtwo'>Tom 2</label>
+                               <p class="formtext">Please select a tom size, larger than your first tom.</p>
+                              <label for='fourpctomtwo'>Tom 2: </label>
                               <select id='fourpctomtwo' name='fourpctomtwo' onchange="fourpctomtwoTun(this)">
                                   <option value="tom">Tom Size</option>
                                   <option value="8">8"</option>
@@ -202,8 +204,8 @@
                               
                               <br>5 Piece:&nbsp;
                               <br>
-                              <p class="form-text">Please select a kick size.</p>
-                              <label for='fivepckick'>Kick</label>
+                              <p class="formtext">Please select a kick size.</p>
+                              <label for='fivepckick'>Kick: </label>
                               <select id='fivepckick' name='fivepckick' onchange="fivepckickTun(this)">
                                   <option value="kick">Kick Size</option>
                                   <option value="18">18"</option>
@@ -216,8 +218,8 @@
                               <br>
                               
                               <br>
-                              <p class="form-text">Please select a snare size.</p>
-                              <label for='fivepcsn'>Snare</label>
+                              <p class="formtext">Please select a snare size.</p>
+                              <label for='fivepcsn'>Snare: </label>
                               <select id='fivepcsn' name='fivepcsn' onchange="fivepcsnTun(this)">
                                   <option value="kick">Snare Size</option>
                                   <option value="10">10"</option>
@@ -230,8 +232,8 @@
                               </div>
                               
                                <br>
-                               <p class="form-text">Please select a tom size, starting with the smallest size.</p>
-                              <label for='fivepctomone'>Tom 1</label>
+                               <p class="formtext">Please select a tom size, starting with the smallest size.</p>
+                              <label for='fivepctomone'>Tom 1: </label>
                               <select id='fivepctomone' name='fivepctomone' onchange="fivepctomoneTun(this)">
                                   <option value="tom">Tom Size</option>
                                   <option value="8">8"</option>
@@ -248,8 +250,8 @@
                               
                               
                                <br>
-                               <p class="form-text">Please select a tom size, larger than your first tom.</p>
-                              <label for='fivepctomtwo'>Tom 2</label>
+                               <p class="formtext">Please select a tom size, larger than your first tom.</p>
+                              <label for='fivepctomtwo'>Tom 2: </label>
                               <select id='fivepctomtwo' name='fivepctomtwo' onchange="fivepctomtwoTun(this)">
                                   <option value="tom">Tom Size</option>
                                   <option value="8">8"</option>
@@ -264,8 +266,8 @@
                               <div class="5pctune" id="5pctom2tune"></div>
                               <br>
                               <br>
-                              <p class="form-text">Please select a tom size, larger than your first tom.</p>
-                              <label for='fivepctomthree'>Tom 3</label>
+                              <p class="formtext">Please select a tom size, larger than your second tom.</p>
+                              <label for='fivepctomthree'>Tom 3: </label>
                               <select id='fivepctomthree' name='fivepctomthree' onchange="fivepctomthreeTun(this)">
                                   <option value="tom">Tom Size</option>
                                   <option value="8">8"</option>
