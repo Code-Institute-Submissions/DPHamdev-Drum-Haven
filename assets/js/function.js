@@ -237,7 +237,7 @@ function fourpctomtwoTun (slction) {
     	document.getElementById('4pctom2tune').innerHTML = "";
       document.getElementById('4pctom1tune').innerHTML = "The Tuning is " + tunings[26];
       }
-    else if (FoPcToTwoTu.value == '10' && FoPcToOneTu.value == '10') {
+    else if (FoPcToTwoTu.value == '10' && FoPcToOneTu.value <= '10') {
   	document.getElementById('4pctom2tune').innerHTML = "This tuning pair isn't possible, please select a larger drum.";
     }
     else if (FoPcToTwoTu.value == '12' && FoPcToOneTu.value == '10') {

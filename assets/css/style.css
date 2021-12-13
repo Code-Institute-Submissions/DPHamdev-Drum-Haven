@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Staatliches&display=swap');
 
 .row {
-  height: 25%;
+  /* height: 25%; */
 }
 
 body {
@@ -12,9 +12,12 @@ body {
 the size of the div 
 element that contains the map. */
 
+
 #map {
-  
-  height: 50%;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
       
 /**************************************** Optional: Makes the sample page fill the window. */
@@ -32,6 +35,11 @@ div #map {
 
 /**************************************** a styling */
 
+.nav-i {
+  margin: 8px;
+  color: burlywood;
+}
+
 nav a {
   font-family: 'staatliches', 'Times New Roman', Times, serif;
   color: white;
@@ -42,7 +50,11 @@ nav a {
 }
 
 a:hover {
-  color: red;
+  color: burlywood;
+}
+
+a:hover i {
+  color: #6b6e70;
 }
 
 /**************************************** h2 styling */
