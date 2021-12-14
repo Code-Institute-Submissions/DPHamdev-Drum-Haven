@@ -12,7 +12,7 @@ https://validator.w3.org/
 ## CSS 
 https://jigsaw.w3.org/css-validator/ 
 
-![htmlval](assets/images/readME/mp2cssval.png)
+![cssval](assets/images/readME/mp2cssval.png)
 
 
 ## USER STORY TESTING
@@ -23,9 +23,13 @@ By making sure that the content is clear and concise, it means that users will b
 
 The responsive Navbar ensures that functionality is maintained throughout with ease of access. 
 
+![navbar](assets/images/readME/navbar.png)
+
 2. As a new Visitor I want to see what sort of business I'm working with.
 
 The moment you land on the page, you are immediately confronted with a brand logo and information with images detailing the services on offer, linking them to the necessary pages. 
+
+![pageimages](assets/images/readME/pageimgs.png)
 
 3. As a new visitor I dont want to be bombarded with large amounts of text.
 
@@ -55,17 +59,75 @@ Lighthouse Report
 
 Scoring very highly on everything bar Performance, not entirely sure why exactly.
 
-Quoted as “Values are estimated and may vary. The performance score is calculated directly from these metrics.”
+Quoted as “Values are estimated and may vary. The performance score is calculated directly from these metrics.”
 
 # Unfixed Bugs
 
 During the development of this website, I found my lack of understanding in regards to Javascript and jQuery really limited my ability to be able to able to solve issues when they arose unfortunately. 
 
-## Google Maps API
+When creating the function for the tuning form, one problem I'd had liked to have solved is that when a user selects a tom size, in the preceding option for the next tom, that any tom sizes smaller than the one selected previously, aren't available to be selected. 
 
-My first major bug was the ability to actually tag Drum Haven on Google Maps as a place, I couldn't quite work out how to actually apply it to the interactive embedded API. 
+To combat this, I have used a prompt above the select option informing the user of the inputs needed. 
 
-As a compromise I targeted the industrial estate that Drum Haven is located on, with a high zoom rating to make sure that it takes up the majority of the viewport. 
+![8inchtomequal](assets/images/readME/8tom18tom2.png)
+Unfortunately, this means that the user is able to make a user led error allowing the function to not display the correct tuning relationships should they not follow the prompts for inputting correct values. 
+
+```
+else if (FoPcToTwoTu.value == '13' && FoPcToOneTu.value == '13') {
+  	document.getElementById('4pctom2tune').innerHTML = "This tuning pair isn't possible, please select a larger drum.";
+    }
+```
+
+I would've liked to have been able to hide the values less than in value to the previous selection. 
+
+
+
+## Tuning form user testing
+
+When a user selects a drum kit, they're given the option to select a drum kit size, doing this displays hidden elements which allows the user to select a corresponding amount of drums. 
+
+Each option gives various drum diameter sizes, when a user selects a drum size, it gives a corresponding note in which that drum should tuned to. 
+
+Originally the coding involved manually entering the tuning of each drum.
+
+``` 
+var threepckicksize = new Array()
+threepckicksize[0] = "Please Select Kick Diameter"
+threepckicksize[1] = "Tuning is C#1"
+threepckicksize[2] = "Tuning is D1"
+threepckicksize[3] = "Tuning is D#1"
+threepckicksize[4] = "Tuning is E1"
+
+function threepckickTun (slction) {
+  txtSelected = slction.selectedIndex;
+  document.getElementById('3pckicktune').innerHTML = threepckicksize[txtSelected];
+}
+```
+
+However, this would have become extremely cluttered and difficult to maintain, so by creating an array including the range of notes in which the drums should be tuned to, it allowed me to be able to call upon a specific note when tuning relationships were needed when selections of more toms were included. 
+
+```
+else if (FiPcToThrTu.value == '13' && FiPcToTwoTu.value == '10' && FiPcToOneTu.value == '8') {
+    	document.getElementById('5pctom3tune').innerHTML = "The Tuning is " + tunings[19];
+      document.getElementById('5pctom2tune').innerHTML = "The Tuning is " + tunings[23];
+      document.getElementById('5pctom1tune').innerHTML = "The Tuning is " + tunings[26];
+      }
+```
+
+Interactivity increases when the drum kit size is larger and more drums are introduced. 
+
+The tom sizes when selected will correlate with the other tom sizes and give an appropriate tuning relationship between the drums. 
+
+![10inch14inchtuning](assets/images/readME/10in14inch.png)
+
+![10inch16inchtuning](assets/images/readME/10in16inch.png)
+
+Once the form is submitted, it sends an email to the user inputted email including their form values, as well as sending an email to the site owner's email including the users inputted values. 
+
+![usrname](assets/images/readME/useremail.png)
+
+![owneremail](assets/images/readME/owneremail.png)
+
 
 ## Click addEventListener function 
 

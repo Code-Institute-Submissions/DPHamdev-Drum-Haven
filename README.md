@@ -82,17 +82,6 @@ This contact form will send an email to drumhavenuk@gmail.com including the form
 
 
 
-### Google Maps
-
-
-
-Included on this page is a responsive Google Maps API, which is centered on the location in which Drum Haven is located in Swansea, South Wales (SA1 8DB). 
-
-
-
-By including this, it means the user can convenient visualise where Drum Haven is located and in turn make their decision possibly easier should the journey be suitable in order to visit. 
-
-
 
 ### Footer
 
@@ -114,6 +103,9 @@ The footer is located in the orientation including it's contents on every page, 
 
 The Tuning page on Drum Haven enables the user to gain an understanding as to what the service is that's on offer. Giving a brief description of the service, means that the user gets all the information they need concisely, including expectations when it comes to the end product as well as the price of the service. 
 
+It allows the user to be able to select the size of their drum kit, the size of the drums in the drum kit as well as the tuning for each drum. 
+
+The tuning relationship between toms changes with each selection, allowing the user to see what tuning their kit will be when they submit it to Drum Haven. 
 
 
 Also included on this page is a form enabling the user to be able to interact with the website, once filled out, the form once submitted will send an email detailing the form values inputted by the user to drumhavenuk@gmail.com. It also sends another email to the user once again reassuring them that the request has been received by the business. 
@@ -123,9 +115,7 @@ Also included on this page is a form enabling the user to be able to interact wi
 ## SERVICING PAGE
 
 
-
 The servicing page is another page, detailing the specific service on offer from Drum Haven that entails various aspects of care when it comes to looking after the clients drums. 
-
 
 
 This concise description means the user can once again, make their decision efficiently by deciphering the information on offer quickly.
@@ -134,28 +124,20 @@ This page also allows the user the ability to be able to arrange a request speci
 
 
 
-
-
 ## CYMBAL REPAIR
 
 
-
 This niche service provided by Drum Haven means that users can understand what it means to repair a cracked cymbal and restore value in expensive items. 
-
 
 
 By allowing the user the ability to give details of the cymbal needing a repair request, it allows the user and business to send and collect an adequate amount of information required to move forward past the first line of enquiry. 
 
 
 
-
-
 All contact forms included on this site mean that the user is made aware that their requests have been received, by using EmailJS's API, it allows the business to provide a professional image and maintain personality by reassuring the customer that they'll be responded to promptly. 
 
 
-
 ## DEPLOYMENT
-
 
 
 This project was developed using gitpod and pushed to GitHub using the build function within gitpod.
@@ -189,18 +171,9 @@ To run this page locally you're required to:
 ## CREDITS
 
 
-
-### Google Maps API
-
-Using the Google Maps API from https://developers.google.com/maps means that I was able to provide user familiarity to a prospectively new client. 
-
-
-
 ### Twitter API
 
 Including Twitters API from https://developer.twitter.com/en allowed the user access to the business' profile in a more conducive and interactive way. 
-
-
 
 
 
@@ -229,7 +202,6 @@ All my fonts are from https://fonts.google.com/
 
 
 ### EmailJS
-
 
 
 Providing ultimate interaction between user and business was utilised by using https://www.emailjs.com/ API framework of building email templates and automated systems. 
