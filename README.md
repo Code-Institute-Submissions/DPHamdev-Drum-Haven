@@ -136,6 +136,10 @@ By allowing the user the ability to give details of the cymbal needing a repair 
 
 All contact forms included on this site mean that the user is made aware that their requests have been received, by using EmailJS's API, it allows the business to provide a professional image and maintain personality by reassuring the customer that they'll be responded to promptly. 
 
+## Wireframe
+
+![wireframe](assets/images/MP2 Wireframe.png)
+
 
 ## DEPLOYMENT
 
