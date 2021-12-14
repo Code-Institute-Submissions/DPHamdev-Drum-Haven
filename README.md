@@ -138,7 +138,7 @@ All contact forms included on this site mean that the user is made aware that th
 
 ## Wireframe
 
-![wireframe](assets/images/MP2 Wireframe.png)
+![wireframe](assets/images/MP2Wireframe.png)
 
 
 ## DEPLOYMENT

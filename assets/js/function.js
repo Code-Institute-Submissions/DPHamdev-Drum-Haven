@@ -510,7 +510,8 @@ function fivepctomtwoTun (slction) {
       }
     else if (FiPcToTwoTu.value == '18' && FiPcToOneTu.value == '13') {
 			document.getElementById('5pctom2tune').innerHTML = "The Tuning is " + tunings[11];
-      document.getElementById('5pctom1tune').innerHTML = "The Tuning is " + tunings[23];      }
+      document.getElementById('5pctom1tune').innerHTML = "The Tuning is " + tunings[23];      
+      }
     else if (FiPcToTwoTu.value == 'tom' && FiPcToOneTu.value == '13') {
     	document.getElementById('5pctom2tune').innerHTML = "";
       document.getElementById('5pctom1tune').innerHTML = "The Tuning is " + tunings[17];
