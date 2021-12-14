@@ -17,7 +17,7 @@ https://jigsaw.w3.org/css-validator/
 
 ## USER STORY TESTING
 
-1. As a new Visitor I want to be able to access the site quickly and efficiently. 
+1. *As a new Visitor I want to be able to access the site quickly and efficiently.* 
 
 By making sure that the content is clear and concise, it means that users will be confronted with clear and concise information on what's on the page and what's interactive. 
 
@@ -25,26 +25,26 @@ The responsive Navbar ensures that functionality is maintained throughout with e
 
 ![navbar](assets/images/readME/navbar.png)
 
-2. As a new Visitor I want to see what sort of business I'm working with.
+2. *As a new Visitor I want to see what sort of business I'm working with.*
 
 The moment you land on the page, you are immediately confronted with a brand logo and information with images detailing the services on offer, linking them to the necessary pages. 
 
 ![pageimages](assets/images/readME/pageimgs.png)
 
-3. As a new visitor I dont want to be bombarded with large amounts of text.
+3. *As a new visitor I dont want to be bombarded with large amounts of text.*
 
 Making sure that all text is clear and concise was at the heart of this development to ensure that users could clearly see where they were on the page, and that it still maintained an attractive appeal. 
 
-4. I want to see what services are available
+4. *I want to see what services are available.*
 
 Each service has it's own dedicated page so not to confuse the user as to what page they're currently on, ensuring this took place makes it clean and easy to navigate around the website. 
 
-5. What can this business offer me?
+5. *What can this business offer me?*
 
 By maintaining interaction between business and client, forms allowing the user to give specific but worthwhile information on services they want to interact with means that they're able to feel satisfied with the interaction and that it's the right amount of information to move forward with an enquiries. 
 
-6. I want to speak to the business
-
+6. *I want to speak to the business
+*
 ![emailtest](assets/images/readME/Mp2businessemail.png)
 
 ![emailtest](assets/images/readME/mp2userreply.png)
@@ -70,6 +70,7 @@ When creating the function for the tuning form, one problem I'd had liked to hav
 To combat this, I have used a prompt above the select option informing the user of the inputs needed. 
 
 ![8inchtomequal](assets/images/readME/8tom18tom2.png)
+
 Unfortunately, this means that the user is able to make a user led error allowing the function to not display the correct tuning relationships should they not follow the prompts for inputting correct values. 
 
 ```
